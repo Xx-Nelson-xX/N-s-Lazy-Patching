@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- ========== ShipTurret_ACI ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACI"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>4</ComponentAdvanced>
+							<ComponentSpacer>2</ComponentSpacer>
+							<Microchips>2</Microchips>
+							<DepletedUranium>60</DepletedUranium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACI"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>130</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACI"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_ACII ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACII"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>8</ComponentAdvanced>
+							<ComponentSpacer>3</ComponentSpacer>
+							<AdvMechanism>6</AdvMechanism>
+							<CarbonAlloy>40</CarbonAlloy>
+							<Microchips>3</Microchips>
+							<DepletedUranium>110</DepletedUranium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACII"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>380</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACII"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_ACIII ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACIII"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>8</ComponentUltra>
+							<AdvMechanism>15</AdvMechanism>
+							<ComponentSpacer>12</ComponentSpacer>
+							<CarbonAlloy>90</CarbonAlloy>
+							<Microchips>4</Microchips>
+							<DepletedUranium>230</DepletedUranium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACIII"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>860</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_ACIII"]/designatorDropdown</xpath>
+				</li>
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

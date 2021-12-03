@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ========== Archocat ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archocat"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Elephant</useMeatFrom>
+					</value>
+				</li>
+				
+				<!-- ========== Archomutt ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archomutt"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Elephant</useMeatFrom>
+					</value>
+				</li>
+				
+				<!-- ========== Archostrich ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archostrich"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Elephant</useMeatFrom>
+					</value>
+				</li>
+				
+				<!-- ========== Archolope ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archolope"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Elephant</useMeatFrom>
+					</value>
+				</li>
+				
+				<!-- ========== Archojerboa ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archojerboa"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Elephant</useMeatFrom>
+					</value>
+				</li>
+				
+				<!-- ========== Archotortoise ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archotortoise"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Elephant</useMeatFrom>
+					</value>
+				</li>
+				
+				<!-- ========== Archopanda ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archopanda"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Muffalo</useMeatFrom>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archopanda"]/race/leatherDef</xpath>
+					<value>
+						<leatherDef>Leather_Heavy</leatherDef>
+					</value>
+				</li>
+				
+				<!-- ========== Archothrumbo ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archothrumbo"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Muffalo</useMeatFrom>
+					</value>
+				</li>
+				
+				<!-- ========== Plant_Meatbush ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Plant_Meatbush"]/plant/harvestedThingDef</xpath>
+					<value>
+						<harvestedThingDef>Meat_Muffalo</harvestedThingDef>
+					</value>
+				</li>
+				
+				<!-- ========== weaponMoney ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="SpaceCrew"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>1300~1500</weaponMoney>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="SpaceCrewMarine"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>1500~1800</weaponMoney>
+					</value>
+				</li>
+				
+				<!-- ========== SoilShip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/TerrainDef[defName="SoilShip"]/costList</xpath>
+					<value>
+						<costList>
+							<Dirt>40</Dirt>
+							<CrushedStone>20</CrushedStone>
+							<SoftClay>20</SoftClay>
+							<Peat>20</Peat>
+							<SandResource>20</SandResource>
+							<Fertilizer>20</Fertilizer>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="SoilShip"]/statBases</xpath>
+					<value>
+						<WorkToBuild>2000</WorkToBuild>
+					</value>
+				</li>
+				
+				<!-- ========== ShipCorner/ShipCornerMech ========== -->
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[@Name="ShipCorner" or @Name="ShipCornerArchotech"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipHardpoint ========== -->
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[@Name="ShipHardpoint"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[@Name="ShipHardpoint"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== BaseShipTorpedoBuilding ========== -->
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[@Name="BaseShipTorpedoBuilding"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipHeatsinkBase ========== -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="ShipHeatsinkBase"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="ShipHeatsinkBase"]/designatorDropdown</xpath>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

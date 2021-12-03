@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+				
+	<!-- SunLamp -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="SunLamp"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Flickable"/>
+		</value>
+	</Operation>
+	
+	<!-- TradingSpot -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TradingSpot"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsMisc</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TradingSpot"]/building</xpath>
+		<value>
+				<uninstallWork>800</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TradingSpot"]/statBases</xpath>
+		<value>
+			<Bulk>200</Bulk>
+			<Mass>10</Mass>
+		</value>
+	</Operation>
+	
+	<!-- FueledStove -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsProduction</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="FueledStove"]/building</xpath>
+		<value>
+				<uninstallWork>800</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="FueledStove"]/statBases</xpath>
+		<value>
+			<Bulk>100</Bulk>
+			<Mass>40</Mass>
+		</value>
+	</Operation>
+	
+	<!-- Passive Cooler -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsTemperature</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/building</xpath>
+		<value>
+				<uninstallWork>200</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/statBases</xpath>
+		<value>
+			<Bulk>20</Bulk>
+			<Mass>10</Mass>
+		</value>
+	</Operation>
+	
+	<!-- Coldstone Passive Cooler -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ColdstonePassiveCooler"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsTemperature</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ColdstonePassiveCooler"]/building</xpath>
+		<value>
+				<uninstallWork>200</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ColdstonePassiveCooler"]/statBases</xpath>
+		<value>
+			<Bulk>20</Bulk>
+			<Mass>10</Mass>
+		</value>
+	</Operation>
+
+</Patch>

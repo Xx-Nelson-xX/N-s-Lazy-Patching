@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>N's lazy patching</name>
+	<author>XxNelsonxX</author>
+	<packageId>XxNelsonxX.NsLP</packageId>
+	<supportedVersions>
+		<li>1.2</li>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>
+	Nothing too fancy here, just some amateur patching to keep the debug log clean when certain mod is actived
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>skyarkhangel.HSK</packageId>
+			<displayName>Hardcore SK</displayName>
+			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
+		</li>
+	</modDependencies>
+		<loadBefore>
+			<li>experimental.optimizations</li>
+			<li>notooshabby.rocketman</li>
+		</loadBefore>
+		<loadAfter>
+			<li>brrainz.harmony</li>
+			<li>Ludeon.RimWorld</li>
+			<li>Ludeon.RimWorld.Royalty</li>
+			<li>UnlimitedHugs.HugsLib</li>
+			<li>CETeam.CombatExtended</li>
+			<li>skyarkhangel.HSK</li>
+			<li>multilangcolorfultraits.pirateby</li>
+			<li>ArpoMo6.HMC.Project</li>
+			<li>XxNelsonxX.ParabellumEiB</li>
+			<li>XxNelsonxX.ParabellumHtL</li>
+			<li>XxNelsonxX.Parabellum</li>
+		</loadAfter>
+		<incompatibleWith>
+		</incompatibleWith>
+	</ModMetaData>

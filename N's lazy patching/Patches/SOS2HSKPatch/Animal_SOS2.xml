@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Save Our Ship 2</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- ========== Archocat ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archocat"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>left claw</label>
+								<capacities>
+								  <li>Scratch</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1</cooldownTime>
+								<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+								<surpriseAttack>
+								  <extraMeleeDamages>
+									<li>
+									  <def>Stun</def>
+									  <amount>4</amount>
+									</li>
+								  </extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>0.8</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right claw</label>
+								<capacities>
+								  <li>Scratch</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1</cooldownTime>
+								<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+								<surpriseAttack>
+								  <extraMeleeDamages>
+									<li>
+									  <def>Stun</def>
+									  <amount>4</amount>
+									</li>
+								  </extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>0.8</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<capacities>
+								  <li>Bite</li>
+								</capacities>
+								<power>6</power>
+								<cooldownTime>1.4</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<chanceFactor>0.7</chanceFactor>
+								<surpriseAttack>
+								  <extraMeleeDamages>
+									<li>
+									  <def>Stun</def>
+									  <amount>12</amount>
+									</li>
+								  </extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationBlunt>1</armorPenetrationBlunt>
+								<armorPenetrationSharp>1.8</armorPenetrationSharp>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.5</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>1</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+				
+				<!-- ========== Archocat ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archomutt"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>left claw</label>
+								<capacities>
+								  <li>Scratch</li>
+								</capacities>
+								<power>10</power>
+								<cooldownTime>1.6</cooldownTime>
+								<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+								<armorPenetrationSharp>1</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.6</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right claw</label>
+								<capacities>
+								  <li>Scratch</li>
+								</capacities>
+								<power>10</power>
+								<cooldownTime>1</cooldownTime>
+								<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+								<armorPenetrationSharp>1</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.6</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<capacities>
+								  <li>Bite</li>
+								</capacities>
+								<power>14</power>
+								<cooldownTime>1.5</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<chanceFactor>0.7</chanceFactor>
+								<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								<armorPenetrationSharp>2.4</armorPenetrationSharp>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>5</power>
+								<cooldownTime>1.5</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>2</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+				
+				<!-- ========== Archoffalo ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archoffalo"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>lefthoofblunt</id>-->
+								<label>left hoof</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>12</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>lefthoofblunt</id>-->
+								<label>left hoof</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>12</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontLeftLeg_2</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>righthoofblunt</id>-->
+								<label>right hoof</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>12</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>righthoofblunt</id>-->
+								<label>right hoof</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>12</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontRightLeg_2</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<capacities>
+									<li>BiteBlunt</li>
+								</capacities>
+								<power>11</power>
+								<cooldownTime>1.65</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>2.2</armorPenetrationBlunt>
+								<chanceFactor>0.2</chanceFactor>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>18</power>
+								<cooldownTime>3.8</cooldownTime>
+								<chanceFactor>0.5</chanceFactor>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>14</armorPenetrationBlunt>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+							</li>
+						</tools>
+					</value>
+				</li>
+				
+				<!-- ========== Archolope ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archolope"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>lefthoofblunt</id>-->
+								<label>left hoof</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>10</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>lefthoofblunt</id>-->
+								<label>left hoof</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>10</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontLeftLeg_2</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>righthoofblunt</id>-->
+								<label>right hoof</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>10</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<!--<id>righthoofblunt</id>-->
+								<label>right hoof</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>10</power>
+								<cooldownTime>1.45</cooldownTime>
+								<linkedBodyPartsGroup>FrontRightLeg_2</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<capacities>
+									<li>BiteBlunt</li>
+								</capacities>
+								<power>9</power>
+								<cooldownTime>1.65</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>2.2</armorPenetrationBlunt>
+								<chanceFactor>0.2</chanceFactor>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>16</power>
+								<cooldownTime>3.8</cooldownTime>
+								<chanceFactor>0.5</chanceFactor>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>14</armorPenetrationBlunt>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+							</li>
+						</tools>
+					</value>
+				</li>
+				
+				<!-- ========== Archotortoise ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archotortoise"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>beak</label>
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>10</power>
+								<cooldownTime>3.5</cooldownTime>
+								<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+								<armorPenetrationSharp>3.2</armorPenetrationSharp>
+								<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>2</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+				
+				<!-- ========== Archopanda ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archopanda"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>left claw</label>
+								<capacities>
+									<li>Scratch</li>
+								</capacities>
+								<power>18</power>
+								<cooldownTime>1.6</cooldownTime>
+								<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+								<surpriseAttack>
+									<extraMeleeDamages>
+										<li>
+											<def>Stun</def>
+											<amount>20</amount>
+										</li>
+									</extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>3.5</armorPenetrationSharp>
+								<armorPenetrationBlunt>7</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right claw</label>
+								<capacities>
+									<li>Scratch</li>
+								</capacities>
+								<power>18</power>
+								<cooldownTime>1.6</cooldownTime>
+								<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+								<surpriseAttack>
+									<extraMeleeDamages>
+										<li>
+											<def>Stun</def>
+											<amount>20</amount>
+										</li>
+									</extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>3.5</armorPenetrationSharp>
+								<armorPenetrationBlunt>7</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>24</power>
+								<cooldownTime>2.4</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<chanceFactor>0.7</chanceFactor>
+								<surpriseAttack>
+									<extraMeleeDamages>
+										<li>
+											<def>Stun</def>
+											<amount>40</amount>
+										</li>
+									</extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>4.7</armorPenetrationSharp>
+								<armorPenetrationBlunt>15</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>12</power>
+								<cooldownTime>2.35</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>10</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+				
+				<!-- ========== Archojerboa ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archojerboa"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>left claw</label>
+								<capacities>
+									<li>Scratch</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.5</cooldownTime>
+								<chanceFactor>0.3</chanceFactor>
+								<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+								<armorPenetrationSharp>2</armorPenetrationSharp>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right claw</label>
+								<capacities>
+									<li>Scratch</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.5</cooldownTime>
+								<chanceFactor>0.3</chanceFactor>
+								<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+								<armorPenetrationSharp>2</armorPenetrationSharp>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>6</power>
+								<cooldownTime>1.5</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<chanceFactor>1.2</chanceFactor>
+								<armorPenetrationBlunt>2</armorPenetrationBlunt>
+								<armorPenetrationSharp>3</armorPenetrationSharp>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>2</power>
+								<cooldownTime>1.5</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>2</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+				
+				<!-- ========== Archothrumbo ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archothrumbo"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>horn</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>30</power>
+								<cooldownTime>2.5</cooldownTime>
+								<extraMeleeDamages>
+								  <li>
+									<def>Flame</def>
+									<amount>10</amount>
+									<chance>0.5</chance>
+								  </li>
+								</extraMeleeDamages>
+								<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+								<armorPenetrationSharp>4.5</armorPenetrationSharp>
+								<armorPenetrationBlunt>4</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>horn</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>32</power>
+								<cooldownTime>2.52</cooldownTime>
+								<extraMeleeDamages>
+								  <li>
+									<def>Flame</def>
+									<amount>10</amount>
+									<chance>0.5</chance>
+								  </li>
+								</extraMeleeDamages>
+								<chanceFactor>0.65</chanceFactor>
+								<linkedBodyPartsGroup>HornAttackTool_2</linkedBodyPartsGroup>
+								<armorPenetrationSharp>8</armorPenetrationSharp>
+								<armorPenetrationBlunt>14</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>left foot</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>18</power>
+								<cooldownTime>1.65</cooldownTime>
+								<extraMeleeDamages>
+								  <li>
+									<def>EMP</def>
+									<amount>9</amount>
+								  </li>
+								</extraMeleeDamages>
+								<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>9</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right foot</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>18</power>
+								<cooldownTime>1.65</cooldownTime>
+								<extraMeleeDamages>
+								  <li>
+									<def>EMP</def>
+									<amount>9</amount>
+								  </li>
+								</extraMeleeDamages>
+								<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+								<armorPenetrationBlunt>9</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>20</power>
+								<cooldownTime>2.0</cooldownTime>
+								<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								<chanceFactor>0.7</chanceFactor>
+								<armorPenetrationSharp>3.5</armorPenetrationSharp>
+								<armorPenetrationBlunt>3</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>14</power>
+								<cooldownTime>2.45</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>4</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Save Our Ship 2</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ========== HologramLaser ========== -->
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[defName="HologramLaser"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>BaseGun_ShortBarreled</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HologramLaser"]/statBases</xpath>
+					<value>
+						<statBases>
+							<SightsEfficiency>1.2</SightsEfficiency>
+							<ShotSpread>0.02</ShotSpread>
+							<SwayFactor>0.8</SwayFactor>
+							<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+							<Bulk>0</Bulk>
+							<Mass>0</Mass>
+						</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HologramLaser"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_Laserbeam</defaultProjectile>
+								<warmupTime>0.7</warmupTime>
+								<range>26</range>
+								<soundCast>ShipCombatLaser</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="HologramLaser"]</xpath>
+					<value>
+						<comps>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>FALSE</aiUseBurstMode>
+								<aiAimMode>AimedShot</aiAimMode>
+							</li>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>10</magazineSize>
+								<reloadTime>2.6</reloadTime>
+								<ammoSet>AmmoSet_ChargedLaser</ammoSet>
+							</li>
+						</comps>
+					</value>
+				</li>
+				
+				<!-- ========== HologramLaserArchotech ========== -->
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[defName="HologramLaserArchotech"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>BaseGun_LongBarreled</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HologramLaserArchotech"]/statBases</xpath>
+					<value>
+						<statBases>
+							<SightsEfficiency>1.8</SightsEfficiency>
+							<ShotSpread>0.02</ShotSpread>
+							<SwayFactor>0.65</SwayFactor>
+							<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+							<Bulk>0</Bulk>
+							<Mass>0</Mass>
+						</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HologramLaserArchotech"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_Laserbeam</defaultProjectile>
+								<warmupTime>0.9</warmupTime>
+								<range>40</range>
+								<ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+								<burstShotCount>4</burstShotCount>
+								<soundCast>ShipCombatLaser</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="HologramLaserArchotech"]</xpath>
+					<value>
+						<comps>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>FALSE</aiUseBurstMode>
+								<aiAimMode>AimedShot</aiAimMode>
+								<aimedBurstShotCount>2</aimedBurstShotCount>
+							</li>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>20</magazineSize>
+								<reloadTime>3</reloadTime>
+								<ammoSet>AmmoSet_ChargedLaser</ammoSet>
+							</li>
+						</comps>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>

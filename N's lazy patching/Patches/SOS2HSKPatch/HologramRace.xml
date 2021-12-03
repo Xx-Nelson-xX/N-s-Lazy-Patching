@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Save Our Ship 2</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ========== Hologram Mics ========== -->
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[defName="SoSHologramRace"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_BasePawn</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/comps/li[@Class="CompProperties_HologramGlower"]</xpath>
+				</li>
+				
+				<!-- ========== Hologram Race ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/statBases/MoveSpeed</xpath>
+					<value>
+						<MoveSpeed>6</MoveSpeed>
+						<MeleeDodgeChance>0</MeleeDodgeChance>
+						<MeleeCritChance>0</MeleeCritChance>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>left fist</label>
+								<capacities>
+								  <li>Blunt</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.1</cooldownTime>
+								<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+								<surpriseAttack>
+								  <extraMeleeDamages>
+									<li>
+									  <def>Stun</def>
+									  <amount>8</amount>
+									</li>
+								  </extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>0.1</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>right fist</label>
+								<capacities>
+								  <li>Blunt</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.1</cooldownTime>
+								<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+								<surpriseAttack>
+								  <extraMeleeDamages>
+									<li>
+									  <def>Stun</def>
+									  <amount>8</amount>
+									</li>
+								  </extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>0.1</armorPenetrationSharp>
+								<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>6</power>
+								<cooldownTime>1.26</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

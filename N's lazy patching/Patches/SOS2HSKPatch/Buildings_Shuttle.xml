@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== PersonalShuttle ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PersonalShuttle"]/costList</xpath>
+					<value>
+						<costList>
+							<Wire>60</Wire>
+							<ComponentSpacer>24</ComponentSpacer>
+							<ReinforcedGlass>30</ReinforcedGlass>
+							<ElectronicComponents>12</ElectronicComponents>
+							<Microchips>3</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="PersonalShuttle"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>200</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== CargoShuttle ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CargoShuttle"]/costList</xpath>
+					<value>
+						<costList>
+							<Wire>100</Wire>
+							<ComponentSpacer>24</ComponentSpacer>
+							<ReinforcedGlass>80</ReinforcedGlass>
+							<ElectronicComponents>8</ElectronicComponents>
+							<Microchips>3</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CargoShuttle"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>450</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== HeavyShuttle ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HeavyShuttle"]/costList</xpath>
+					<value>
+						<costList>
+							<Wire>130</Wire>
+							<ComponentSpacer>32</ComponentSpacer>
+							<ReinforcedGlass>80</ReinforcedGlass>
+							<ElectronicComponents>10</ElectronicComponents>
+							<Microchips>3</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="HeavyShuttle"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>600</costStuffCount>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

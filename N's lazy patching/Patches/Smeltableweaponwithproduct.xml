@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+			
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[@Name="BaseGunCR"]</xpath>
+		<value>
+			<smeltable>true</smeltable>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[@Name="BaseEquipment"]</xpath>
+		<value>
+			<smeltable>true</smeltable>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[@Name="SK_ChunkBase"]</xpath>
+		<value>
+			<smeltable>true</smeltable>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Gun_FireExtinguisher"]</xpath>
+		<value>
+			<smeltable>true</smeltable>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">	
+		<xpath>Defs/ThingDef[@Name="SK_BaseGun"]/smeltProducts</xpath>
+	</Operation>
+	
+</Patch>

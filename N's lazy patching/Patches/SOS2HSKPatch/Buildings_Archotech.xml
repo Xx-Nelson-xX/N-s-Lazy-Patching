@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== ShipArchotechSpore ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipArchotechSpore"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>80</ComponentUltra>
+							<MagneticMaterial>60</MagneticMaterial>
+							<AdvMechanism>120</AdvMechanism>
+							<Microchips>12</Microchips>
+							<BioMicrochips>4</BioMicrochips>
+							<GoldBar>120</GoldBar>
+							<Uranium>250</Uranium>
+							<MAAI_Chip>15</MAAI_Chip>
+							<BetaPoly>30</BetaPoly>
+							<AIPersonaCore>2</AIPersonaCore>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipArchotechSpore"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>700</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipArchotechSpore"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipArchotechPillar ========== -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipArchotechPillarA" or defName="ShipArchotechPillarB" or defName="ShipArchotechPillarC" or defName="ShipArchotechPillarD"]</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>20</ComponentUltra>
+							<MagneticMaterial>25</MagneticMaterial>
+							<AdvMechanism>25</AdvMechanism>
+							<Microchips>6</Microchips>
+							<BiosyntheticMaterial>25</BiosyntheticMaterial>
+							<ArchotechExoticParticles>15</ArchotechExoticParticles>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipArchotechPillarA" or defName="ShipArchotechPillarB" or defName="ShipArchotechPillarC" or defName="ShipArchotechPillarD"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>200</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="ShipPillar"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ArchotechUplink ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ArchotechUplink"]/costList</xpath>
+					<value>
+						<costList>
+							<MagneticMaterial>10</MagneticMaterial>
+							<AdvMechanism>15</AdvMechanism>
+							<Microchips>6</Microchips>
+							<ComponentUltra>10</ComponentUltra>
+							<ComponentSpacer>15</ComponentSpacer>
+							<Wire>50</Wire>
+							<Plastic>120</Plastic>
+							<Ceramics>50</Ceramics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ArchotechUplink"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>350</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ArchotechUplink"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipHullTileArchotech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHullTileArchotech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>1</ComponentUltra>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipHullTileArchotech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>1</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipHullTileArchotech"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipHullTileArchotech"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ArchotechAntimatterReactor ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ArchotechAntimatterReactor"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>20</ComponentSpacer>
+							<Microchips>4</Microchips>
+							<SilverBar>100</SilverBar>
+							<GoldBar>200</GoldBar>
+							<Titanium>120</Titanium>
+							<ArchotechExoticParticles>10</ArchotechExoticParticles>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ArchotechAntimatterReactor"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>500</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ArchotechAntimatterReactor"]/designatorDropdown</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ArchotechAntimatterReactor"]/constructEffect</xpath>
+				</li>
+				
+				<!-- ========== ShipHeatsinkAntiEntropy ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHeatsinkAntiEntropy"]/costList</xpath>
+					<value>
+						<costList>
+							<AdvMechanism>15</AdvMechanism>
+							<Microchips>2</Microchips>
+							<ComponentUltra>5</ComponentUltra>
+							<ComponentSpacer>10</ComponentSpacer>
+							<Wire>40</Wire>
+							<ArchotechExoticParticles>6</ArchotechExoticParticles>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipHeatsinkAntiEntropy"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>75</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_BeamArchotech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_BeamArchotech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>4</ComponentUltra>
+							<Wire>30</Wire>
+							<MagneticMaterial>1</MagneticMaterial>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Ship_BeamArchotech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>30</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Ship_BeamArchotech"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_BeamArchotech_Unpowered ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>4</ComponentUltra>
+							<Wire>15</Wire>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>30</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_Corner_Archo_OneOne/Ship_Corner_Archo_OneOneFlip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_Archo_OneOne" or defName="Ship_Corner_Archo_OneOneFlip"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>2</ComponentUltra>
+							<CarbonAlloy>5</CarbonAlloy>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_Archo_OneOne" or defName="Ship_Corner_Archo_OneOneFlip"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>15</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Corner_Archo_OneTwo/Ship_Corner_Archo_OneTwoFlip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_Archo_OneTwo" or defName="Ship_Corner_Archo_OneTwoFlip"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>3</ComponentUltra>
+							<CarbonAlloy>8</CarbonAlloy>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_Archo_OneTwo" or defName="Ship_Corner_Archo_OneTwoFlip"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>22</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Corner_Archo_OneThree/Ship_Corner_Archo_OneThreeFlip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_Archo_OneThree" or defName="Ship_Corner_Archo_OneThreeFlip"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>4</ComponentUltra>
+							<CarbonAlloy>12</CarbonAlloy>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_Archo_OneThree" or defName="Ship_Corner_Archo_OneThreeFlip"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>30</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ArchotechShieldGenerator ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ArchotechShieldGenerator"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>35</ComponentUltra>
+							<MagneticMaterial>120</MagneticMaterial>
+							<AdvMechanism>70</AdvMechanism>
+							<Microchips>8</Microchips>
+							<GoldBar>250</GoldBar>
+							<AlphaPoly>20</AlphaPoly>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ArchotechShieldGenerator"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>550</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ArchotechShieldGenerator"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ArchotechShieldGenerator"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipSpinalBarrelPsychic ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelPsychic"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>25</ComponentUltra>
+							<MagneticMaterial>30</MagneticMaterial>
+							<Microchips>4</Microchips>
+							<Uranium>250</Uranium>
+							<GoldBar>100</GoldBar>
+							<AdvMechanism>20</AdvMechanism>
+							<ArchotechPsychicCore>1</ArchotechPsychicCore>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelPsychic"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>680</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelPsychic"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipSpinalBarrelMechanite ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelMechanite"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>20</ComponentUltra>
+							<MagneticMaterial>40</MagneticMaterial>
+							<GoldBar>80</GoldBar>
+							<AdvMechanism>25</AdvMechanism>
+							<Microchips>3</Microchips>
+							<ArchotechMechaniteCore>1</ArchotechMechaniteCore>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelMechanite"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>680</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelMechanite"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Weapon_GrenadeMechanite ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Weapon_GrenadeMechanite"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>5</ComponentUltra>
+						    <ArchotechMechaniteCore>1</ArchotechMechaniteCore>
+						    <BetaPoly>20</BetaPoly>
+						    <ReinforcedGlass>15</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Weapon_GrenadeMechanite"]/recipeMaker</xpath>
+					<value>
+						<recipeMaker>
+							<researchPrerequisite>ArchotechMechaniteWeapon</researchPrerequisite>
+							<skillRequirements>
+								<Crafting>19</Crafting>
+							</skillRequirements>
+						</recipeMaker>
+					</value>
+				</li>
+				
+				<!-- ========== ArchoRecycler ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ArchoRecycler"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>15</ComponentUltra>
+							<AdvMechanism>30</AdvMechanism>
+							<Microchips>4</Microchips>
+							<ArchotechMechaniteCore>1</ArchotechMechaniteCore>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ArchoRecycler"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>280</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ArchoRecycler"]/constructEffect</xpath>
+				</li>
+				
+				<!-- ========== Ship_Engine_Archotech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Archotech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>12</ComponentUltra>
+							<ComponentAdvanced>16</ComponentAdvanced>
+							<DepletedUranium>80</DepletedUranium>
+							<Plastic>150</Plastic>
+							<MagneticMaterial>20</MagneticMaterial>
+							<GoldBar>100</GoldBar>
+							<AdvMechanism>2</AdvMechanism>
+							<Microchips>3</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Archotech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>800</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Archotech"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipAirlockArchotech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipAirlockArchotech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>15</ComponentUltra>
+							<Electronics>2</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipAirlockArchotech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>50</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipAirlockArchotech"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipInside_PassiveVentArchotech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVentArchotech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>1</ComponentUltra>
+							<ComponentIndustrial>2</ComponentIndustrial>
+							<CarbonAlloy>15</CarbonAlloy>
+							<GoldBar>20</GoldBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVentArchotech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>40</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVentArchotech"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipInside_PassiveCoolerArchotech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerArchotech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentAdvanced>5</ComponentAdvanced>
+							<AdvMechanism>2</AdvMechanism>
+							<GoldBar>20</GoldBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerArchotech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerArchotech"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipInside_SolarGeneratorArchotech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGeneratorArchotech"]/costList</xpath>
+					<value>
+						<costList>
+							<ReinforcedGlass>40</ReinforcedGlass>
+							<ElectronicComponents>2</ElectronicComponents>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentUltra>2</ComponentUltra>
+							<AdvMechanism>1</AdvMechanism>
+							<CarbonAlloy>5</CarbonAlloy>
+							<GoldBar>10</GoldBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGeneratorArchotech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>30</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGeneratorArchotech"]/designatorDropdown</xpath>
+				</li>
+		
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

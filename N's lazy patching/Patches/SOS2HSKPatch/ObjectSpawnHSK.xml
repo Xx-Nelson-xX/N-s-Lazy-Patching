@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/SK.ObjectSpawnsDef[defName="ObjectSpawn_AncientStargate"]</xpath>
+					<value>
+						<forbiddenBiomes>
+							<li>OuterSpaceBiome</li>
+						</forbiddenBiomes>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/SK.ObjectSpawnsDef[defName="ObjectSpawn_HeadPike"]</xpath>
+					<value>
+						<forbiddenBiomes>
+							<li>OuterSpaceBiome</li>
+						</forbiddenBiomes>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/SK.ObjectSpawnsDef[defName="ObjectSpawn_Totem"]</xpath>
+					<value>
+						<forbiddenBiomes>
+							<li>OuterSpaceBiome</li>
+						</forbiddenBiomes>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/SK.ObjectSpawnsDef[defName="ObjectSpawn_Cairn"]</xpath>
+					<value>
+						<forbiddenBiomes>
+							<li>OuterSpaceBiome</li>
+						</forbiddenBiomes>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/SK.ObjectSpawnsDef[defName="ObjectSpawn_CrashedShipWreck"]</xpath>
+					<value>
+						<forbiddenBiomes>
+							<li>OuterSpaceBiome</li>
+						</forbiddenBiomes>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/SK.ObjectSpawnsDef[defName="ObjectSpawn_ShipWreck"]</xpath>
+					<value>
+						<forbiddenBiomes>
+							<li>OuterSpaceBiome</li>
+						</forbiddenBiomes>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

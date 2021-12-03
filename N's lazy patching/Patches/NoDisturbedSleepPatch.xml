@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThoughtDef[defName = "SleepDisturbed"]/durationDays</xpath>
+	<value>
+	  <durationDays>0.0001</durationDays>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThoughtDef[defName = "SleepDisturbed"]/stackLimit</xpath>
+	<value>
+	    <stackLimit>0</stackLimit>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThoughtDef[defName = "SleepDisturbed"]/showBubble</xpath>
+	<value>
+	  <showBubble>false</showBubble>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThoughtDef[defName = "SleepDisturbed"]/stackedEffectMultiplier</xpath>
+	<value>
+	  <stackedEffectMultiplier>0</stackedEffectMultiplier>
+	</value>
+  </Operation>
+</Patch>

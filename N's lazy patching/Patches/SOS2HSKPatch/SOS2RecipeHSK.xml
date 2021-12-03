@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- ========== HullFoam ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeHullFoam"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							  <li>
+								<filter>
+									<categories>
+										<li>SLDBar</li>
+										<li>USLDBar</li>
+									</categories>
+								</filter>
+								<count>3</count>
+							  </li>
+							  <li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							  </li>
+							  <li>
+								<filter>
+									<thingDefs>
+										<li>Compaste</li>
+									</thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							  <li>
+								<filter>
+									<thingDefs>
+										<li>Ceramics</li>
+									</thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+						</ingredients>
+					</value>
+				</li>
+				
+				<!-- ========== FuelPods ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeShuttleFuelPods"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							  <li>
+								<filter>
+							  <thingDefs>
+								<li>Antimatter</li>
+							  </thingDefs>
+							</filter>
+							<count>30</count>
+							  </li>
+							  <li>
+								<filter>
+							  <thingDefs>
+								<li>Uranium</li>
+							  </thingDefs>
+							</filter>
+							<count>80</count>
+							  </li>
+							  <li>
+								<filter>
+							  <categories>
+								<li>HeavyBar</li>
+							  </categories>
+							</filter>
+							<count>30</count>
+							  </li>
+						</ingredients>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeShuttleFuelPods"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Antimatter</li>
+								<li>Uranium</li>
+							</thingDefs>
+							<categories>
+								<li>HeavyBar</li>
+							</categories>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeShuttleFuelPods"]/recipeUsers</xpath>
+					<value>
+						<recipeUsers>
+							<li>Matterfab</li>
+						</recipeUsers>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

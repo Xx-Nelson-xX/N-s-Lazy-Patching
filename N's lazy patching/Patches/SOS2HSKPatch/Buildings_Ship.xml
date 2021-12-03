@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ========== Ship_Beam_Unpowered ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Beam_Unpowered"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>2</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Beam_Unpowered"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Beam_Unpowered"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_Beam ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Beam"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>4</ComponentAdvanced>
+							<Wire>20</Wire>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_Beam"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_Beam"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Beam"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_Corner_OneOne/Ship_Corner_OneOneFlip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneOne" or defName="Ship_Corner_OneOneFlip"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>2</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneOne" or defName="Ship_Corner_OneOneFlip"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>12</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Corner_OneTwo/Ship_Corner_OneTwoFlip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneTwo" or defName="Ship_Corner_OneTwoFlip"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>3</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneTwo" or defName="Ship_Corner_OneTwoFlip"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>24</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Corner_OneThree/Ship_Corner_OneThreeFlip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneThree" or defName="Ship_Corner_OneThreeFlip"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>4</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneThree" or defName="Ship_Corner_OneThreeFlip"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>36</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipInside_SolarGenerator ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGenerator"]/costList</xpath>
+					<value>
+						<costList>
+							<ReinforcedGlass>40</ReinforcedGlass>
+							<ElectronicComponents>2</ElectronicComponents>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentAdvanced>3</ComponentAdvanced>
+							<AdvMechanism>1</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGenerator"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>30</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGenerator"]/designatorDropdown</xpath>
+				</li>
+
+				<!-- ========== ShipInside_PassiveCooler ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCooler"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentAdvanced>4</ComponentAdvanced>
+							<AdvMechanism>1</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCooler"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCooler"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipInside_PassiveCoolerAdvanced ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerAdvanced"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentAdvanced>5</ComponentAdvanced>
+							<AdvMechanism>2</AdvMechanism>
+							<DepletedUranium>20</DepletedUranium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerAdvanced"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerAdvanced"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipAirlock ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipAirlock"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>4</ComponentSpacer>
+							<Electronics>1</Electronics>
+							<AdvMechanism>1</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipAirlock"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>60</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipAirlock"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipHullTile ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHullTile"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>1</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHullTile"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>10</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipHullTile"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipHullTile"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipHardpointSmall ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHardpointSmall"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>2</ComponentAdvanced>
+							<AdvMechanism>1</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHardpointSmall"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipHardpoint ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHardpoint"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>6</ComponentAdvanced>
+							<AdvMechanism>3</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHardpoint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>60</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipHardpointExtraMedium ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHardpointExtraMedium"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>8</ComponentAdvanced>
+							<AdvMechanism>4</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHardpointExtraMedium"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>100</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipHardpointLarge ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHardpointLarge"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>10</ComponentAdvanced>
+							<AdvMechanism>5</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHardpointLarge"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>150</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Engine_Small ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Small"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>6</ComponentSpacer>
+							<Electronics>1</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Small"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Small"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_Engine ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Engine"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<Electronics>2</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>200</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_Engine_Large ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Large"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>8</ComponentUltra>
+							<ComponentAdvanced>14</ComponentAdvanced>
+							<Microchips>2</Microchips>
+							<DepletedUranium>80</DepletedUranium>
+							<Plastic>120</Plastic>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Large"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>700</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Large"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_Engine_Interplanetary ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Interplanetary"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<Microchips>2</Microchips>
+							<SoSEntanglementManifold>1</SoSEntanglementManifold>
+							<Titanium>60</Titanium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine_Interplanetary"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>180</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipPilotSeatMini ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipPilotSeatMini"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>6</ComponentSpacer>
+							<Electronics>2</Electronics>
+							<ReinforcedGlass>30</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipPilotSeatMini"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipPilotSeatMini"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipPilotSeat ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipPilotSeat"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>8</ComponentSpacer>
+							<Microchips>2</Microchips>
+							<ReinforcedGlass>60</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipPilotSeat"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>150</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipPilotSeat"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_ComputerCore ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<Microchips>2</Microchips>
+							<GoldBar>50</GoldBar>
+							<AIPersonaCore>1</AIPersonaCore>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>150</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_SensorCluster ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_SensorCluster"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>6</ComponentSpacer>
+							<ElectronicComponents>4</ElectronicComponents>
+							<Electronics>2</Electronics>
+							<GoldBar>10</GoldBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_SensorCluster"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_SensorCluster"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_LifeSupport ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_LifeSupport"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentAdvanced>6</ComponentAdvanced>
+							<Electronics>2</Electronics>
+							<Glass>40</Glass>
+							<Plastic>25</Plastic>
+							<Dirt>40</Dirt>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_LifeSupport"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>200</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_LifeSupport"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_LifeSupport_Small ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_LifeSupport_Small"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>4</ComponentAdvanced>
+							<Electronics>1</Electronics>
+							<Glass>20</Glass>
+							<Plastic>15</Plastic>
+							<Dirt>20</Dirt>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_LifeSupport_Small"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>75</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_LifeSupport_Small"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipCapacitor ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipCapacitor"]/costList</xpath>
+					<value>
+						<costList>
+							<BiosyntheticMaterial>50</BiosyntheticMaterial>
+							<ComponentSpacer>20</ComponentSpacer>
+							<MagneticMaterial>50</MagneticMaterial>
+							<Microchips>4</Microchips>
+							<Titanium>100</Titanium>
+							<LeadBar>150</LeadBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipCapacitor"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>200</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipCapacitor"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipCapacitor"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipCapacitorSmall ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipCapacitorSmall"]/costList</xpath>
+					<value>
+						<costList>
+							<BiosyntheticMaterial>10</BiosyntheticMaterial>
+							<ComponentSpacer>6</ComponentSpacer>
+							<MagneticMaterial>6</MagneticMaterial>
+							<Microchips>1</Microchips>
+							<Titanium>20</Titanium>
+							<LeadBar>50</LeadBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipCapacitorSmall"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>60</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipCapacitorSmall"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipCapacitorSmall"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Ship_Reactor ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Reactor"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>20</ComponentSpacer>
+							<Microchips>4</Microchips>
+							<SilverBar>100</SilverBar>
+							<Titanium>200</Titanium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_Reactor"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_Reactor"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>500</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Reactor"]/designatorDropdown</xpath>
+				</li>
+
+				<!-- ========== ShipShuttleBay ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipShuttleBay"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<Electronics>4</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipShuttleBay"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>300</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipSalvageBay ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSalvageBay"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<Electronics>2</Electronics>
+							<AdvMechanism>2</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipSalvageBay"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>300</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_CryptosleepCasket ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>6</ComponentSpacer>
+							<Microchips>2</Microchips>
+							<DepletedUranium>30</DepletedUranium>
+							<AdvMechanism>1</AdvMechanism>
+							<ReinforcedGlass>20</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== CrittersleepCasket ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CrittersleepCasket"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>6</ComponentSpacer>
+							<ElectronicComponents>8</ElectronicComponents>
+							<Microchips>1</Microchips>
+							<ReinforcedGlass>30</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="CrittersleepCasket"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="CrittersleepCasket"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== CrittersleepCasketLarge ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CrittersleepCasketLarge"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>16</ComponentSpacer>
+							<ElectronicComponents>32</ElectronicComponents>
+							<Microchips>2</Microchips>
+							<ReinforcedGlass>80</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="CrittersleepCasketLarge"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>400</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="CrittersleepCasketLarge"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== Cryptonest ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cryptonest"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>6</ComponentSpacer>
+							<Microchips>1</Microchips>
+							<ReinforcedGlass>20</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Cryptonest"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Cryptonest"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipCloakingDevice ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipCloakingDevice"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>20</ComponentSpacer>
+							<GoldBar>80</GoldBar>
+							<AdvMechanism>8</AdvMechanism>
+							<Microchips>4</Microchips>
+							<CarbonAlloy>60</CarbonAlloy>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipCloakingDevice"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>320</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_SensorClusterAdv ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_SensorClusterAdv"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>10</ComponentSpacer>
+							<ComponentIndustrial>20</ComponentIndustrial>
+							<GoldBar>40</GoldBar>
+							<Microchips>2</Microchips>
+							<Glass>70</Glass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_SensorClusterAdv"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>320</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_SensorClusterAdv"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipInside_PassiveVent ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVent"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>1</ComponentAdvanced>
+							<ComponentIndustrial>2</ComponentIndustrial>
+							<CarbonAlloy>15</CarbonAlloy>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVent"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>40</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVent"]/designatorDropdown</xpath>
+				</li>
+			
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>

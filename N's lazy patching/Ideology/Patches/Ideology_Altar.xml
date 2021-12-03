@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+
+			<!-- ==================== Small Altar ========================== -->
+			<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Altar_Small"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+					<building>
+					  <uninstallWork>200</uninstallWork>
+					</building>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Altar_Small"]/statBases</xpath>
+				<value>
+					<Bulk>20</Bulk>
+					<Mass>10</Mass>
+				</value>
+			</li>
+			
+			<!-- ==================== Medium Altar ========================== -->
+			<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Altar_Medium"]</xpath>
+				<value>
+					<minifiedDef>MinifiedThing</minifiedDef>
+					<building>
+					  <uninstallWork>500</uninstallWork>
+					</building>
+					<thingCategories>
+						<li>BuildingsMisc</li>
+					</thingCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Altar_Medium"]/statBases</xpath>
+				<value>
+					<Bulk>50</Bulk>
+					<Mass>40</Mass>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>

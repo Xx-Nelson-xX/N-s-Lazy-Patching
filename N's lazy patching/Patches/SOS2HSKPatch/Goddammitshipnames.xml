@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/EnemyShipDef[defName="MicroFighterMKII"]/label</xpath>
+					<value>
+						<label>FighterMKII</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/EnemyShipDef[defName="MechanoidMoonBase"]/label</xpath>
+					<value>
+						<label>NOT A SHIP</label>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

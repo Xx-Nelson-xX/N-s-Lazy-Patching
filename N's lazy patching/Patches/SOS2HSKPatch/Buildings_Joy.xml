@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Holodeck_Basic ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Holodeck_Basic"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>4</ComponentIndustrial>
+							<Electronics>4</Electronics>
+							<Glass>5</Glass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Holodeck_Basic"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					 </value>
+				</li>
+				
+				<!-- ========== Holodeck_Standard ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Holodeck_Standard"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>5</ComponentAdvanced>
+							<Electronics>6</Electronics>
+							<Microchips>2</Microchips>
+							<Glass>30</Glass>
+							<Plastic>60</Plastic>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Holodeck_Standard"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>170</costStuffCount>
+					 </value>
+				</li>
+				
+				<!-- ========== Holodeck_AI ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Holodeck_AI"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>10</ComponentUltra>
+							<Microchips>4</Microchips>
+							<ReinforcedGlass>50</ReinforcedGlass>
+							<BioMicrochips>2</BioMicrochips>
+							<AIPersonaCore>1</AIPersonaCore>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Holodeck_AI"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>260</costStuffCount>
+					 </value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ========== ShipAirlockMech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipAirlockMech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>4</ComponentSpacer>
+							<Electronics>1</Electronics>
+							<AdvMechanism>1</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipAirlockMech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>60</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipHullTileMech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHullTileMech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>1</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHullTileMech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>10</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipHullTileMech"]/constructEffect</xpath>
+				</li>
+				
+				<!-- ========== Ship_BeamMech_Unpowered ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_BeamMech_Unpowered"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>2</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_BeamMech_Unpowered"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_BeamMech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_BeamMech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>4</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_BeamMech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Corner_OneOne_Mech/Ship_Corner_OneOne_MechFlip ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneOne_Mech" or defName="Ship_Corner_OneOne_MechFlip"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>2</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneOne_Mech" or defName="Ship_Corner_OneOne_MechFlip"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>12</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Corner_OneTwo_Mech/Ship_Corner_OneTwoFlip_Mech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneTwo_Mech" or defName="Ship_Corner_OneTwoFlip_Mech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>3</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneTwo_Mech" or defName="Ship_Corner_OneTwoFlip_Mech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>24</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== Ship_Corner_OneThree_Mech/Ship_Corner_OneThreeFlip_Mech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneThree_Mech" or defName="Ship_Corner_OneThreeFlip_Mech"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentAdvanced>4</ComponentAdvanced>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Corner_OneThree_Mech" or defName="Ship_Corner_OneThreeFlip_Mech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>36</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipInside_SolarGeneratorMech ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGeneratorMech"]/costList</xpath>
+					<value>
+						<costList>
+							<ReinforcedGlass>40</ReinforcedGlass>
+							<ElectronicComponents>2</ElectronicComponents>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentUltra>2</ComponentUltra>
+							<AdvMechanism>1</AdvMechanism>
+							<CarbonAlloy>10</CarbonAlloy>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_SolarGeneratorMech"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>30</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipInside_PassiveVentMechanoid ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVentMechanoid"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>1</ComponentUltra>
+							<ComponentIndustrial>2</ComponentIndustrial>
+							<CarbonAlloy>15</CarbonAlloy>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveVentMechanoid"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>40</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipInside_PassiveCoolerMechanoid ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerMechanoid"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentAdvanced>4</ComponentAdvanced>
+							<AdvMechanism>1</AdvMechanism>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerMechanoid"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

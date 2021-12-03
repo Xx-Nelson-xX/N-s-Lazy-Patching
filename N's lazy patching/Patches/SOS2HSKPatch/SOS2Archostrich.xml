@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Save Our Ship 2</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ========== ArchoAnimals Mics ========== -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Archostrich"]/race</xpath>
+					<value>
+						<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+						<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+						<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+					</value>
+				</li>
+				
+				<!-- ========== Archostrich ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Archostrich"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>claws</label>
+								<capacities>
+								  <li>Scratch</li>
+								</capacities>
+								<power>12</power>
+								<cooldownTime>1.6</cooldownTime>
+								<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+								<surpriseAttack>
+									<extraMeleeDamages>
+										<li>
+											<def>Stun</def>
+											<amount>20</amount>
+										</li>
+									</extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>1.8</armorPenetrationSharp>
+								<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>beak</label>
+								<capacities>
+									<li>Bite</li>
+								</capacities>
+								<power>12</power>
+								<cooldownTime>1.8</cooldownTime>
+								<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+								<surpriseAttack>
+									<extraMeleeDamages>
+										<li>
+											<def>Stun</def>
+											<amount>20</amount>
+										</li>
+									</extraMeleeDamages>
+								</surpriseAttack>
+								<armorPenetrationSharp>2.4</armorPenetrationSharp>
+								<armorPenetrationBlunt>2.1</armorPenetrationBlunt>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>8</power>
+								<cooldownTime>1.6</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+								<chanceFactor>0.2</chanceFactor>
+								<armorPenetrationBlunt>2</armorPenetrationBlunt>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

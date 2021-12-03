@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== ArchitectSense ========== -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipHulls</defName>
+							<label>Ship Hulls</label>
+							<description>Ship hulls and airlocks.</description>
+							<defNames>
+								<li>Ship_Beam_Unpowered</li>
+								<li>Ship_Beam</li>
+								<li>Ship_BeamArchotech_Unpowered</li>
+								<li>Ship_BeamArchotech</li>
+								<li>ShipAirlock</li>
+								<li>ShipAirlockMech</li>
+								<li>ShipAirlockArchotech</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipHullTiles</defName>
+							<label>Ship Hulls Tiles</label>
+							<description>Ship hulls tiles, flooring for ships.</description>
+							<defNames>
+								<li>ShipHullTileArchotech</li>
+								<li>ShipHullTileMech</li>
+								<li>ShipHullTile</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipCorners</defName>
+							<label>Ship Corners</label>
+							<description>Ship corners.</description>
+							<defNames>
+								<li>Ship_Corner_OneOne</li>
+								<li>Ship_Corner_OneOneFlip</li>
+								<li>Ship_Corner_OneTwo</li>
+								<li>Ship_Corner_OneTwoFlip</li>
+								<li>Ship_Corner_OneThree</li>
+								<li>Ship_Corner_OneThreeFlip</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ArchShipCorners</defName>
+							<label>Archotech Ship Corners</label>
+							<description>Ship corners.</description>
+							<defNames>
+								<li>Ship_Corner_Archo_OneOne</li>
+								<li>Ship_Corner_Archo_OneOneFlip</li>
+								<li>Ship_Corner_Archo_OneTwo</li>
+								<li>Ship_Corner_Archo_OneTwoFlip</li>
+								<li>Ship_Corner_Archo_OneThree</li>
+								<li>Ship_Corner_Archo_OneThreeFlip</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipSupports</defName>
+							<label>Life Support and Vents</label>
+							<description>Ship life support systems, temperature vents and air conditioners.</description>
+							<defNames>
+								<li>Ship_LifeSupport</li>
+								<li>Ship_LifeSupport_Small</li>
+								<li>ShipInside_PassiveVent</li>
+								<li>ShipInside_PassiveVentMechanoid</li>
+								<li>ShipInside_PassiveVentArchotech</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipCoolingI</defName>
+							<label>Ship Cooling System I</label>
+							<description>Ship heat purge ports and radiators.</description>
+							<defNames>
+								<li>ShipPurgePort</li>
+								<li>ShipPurgePortLarge</li>
+								<li>ShipInside_PassiveCooler</li>
+								<li>ShipInside_PassiveCoolerAdvanced</li>
+								<li>ShipInside_PassiveCoolerMechanoid</li>
+								<li>ShipInside_PassiveCoolerArchotech</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipCoolingII</defName>
+							<label>Ship Cooling System II</label>
+							<description>Ship passive cooling and heatsinks.</description>
+							<defNames>
+								<li>ShipHeatsinkAntiEntropy</li>
+								<li>ShipHeatsink</li>
+								<li>ShipHeatsinkLarge</li>
+								<li>ShipHeatManifold</li>
+								<li>ShipHeatConduit</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipHardpoints</defName>
+							<label>Ship Hardpoints</label>
+							<description>Ship hardpoints.</description>
+							<defNames>
+								<li>ShipHardpointSmall</li>
+								<li>ShipHardpoint</li>
+								<li>ShipHardpointExtraMedium</li>
+								<li>ShipHardpointLarge</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipEngines</defName>
+							<label>Ship Engines</label>
+							<description>Ship engines.</description>
+							<defNames>
+								<li>Ship_Engine_Small</li>
+								<li>Ship_Engine</li>
+								<li>Ship_Engine_Interplanetary</li>
+								<li>Ship_Engine_Large</li>
+								<li>Ship_Engine_Archotech</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipTurrets_I</defName>
+							<label>Ship Turrets I</label>
+							<description>Ship energy turrets.</description>
+							<defNames>
+								<li>ShipTurret_Laser</li>
+								<li>ShipTurret_Laser_Large</li>
+								<li>ShipTurret_Plasma</li>
+								<li>ShipTurret_Plasma_Large</li>
+								<li>ShipTurret_Kinetic</li>
+								<li>ShipTurret_Kinetic_Large</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipTurrets_II</defName>
+							<label>Ship Turrets II</label>
+							<description>Ship Slug Turrets and Torpedos.</description>
+							<defNames>
+								<li>ShipTurret_ACI</li>
+								<li>ShipTurret_ACII</li>
+								<li>ShipTurret_ACIII</li>
+								<li>ShipTorpedoOne</li>
+								<li>ShipTorpedoTwo</li>
+								<li>ShipTorpedoSix</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipTurrets_Spinal_Barrels</defName>
+							<label>Ship spinal barrels</label>
+							<description>Ship spinal barrels.</description>
+							<defNames>
+								<li>ShipSpinalBarrelLaser</li>
+								<li>ShipSpinalBarrelPlasma</li>
+								<li>ShipSpinalBarrelKinetic</li>
+								<li>ShipSpinalBarrelMechanite</li>
+								<li>ShipSpinalBarrelPsychic</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipTurrets_Spinal_Parts</defName>
+							<label>Ship spinal parts</label>
+							<description>Ship spinal parts and extensions.</description>
+							<defNames>
+								<li>ShipSpinalEmitter</li>
+								<li>ShipSpinalAmplifier</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_Special</defName>
+							<label>Ship Special</label>
+							<description>Ship special structures.</description>
+							<defNames>
+								<li>ShipArchotechSpore</li>
+								<li>ArchotechUplink</li>
+								<li>HullFoamDistributor</li>
+								<li>ArchoRecycler</li>
+								<li>Ship_HologramRelay</li>
+								<li>Ship_AvatarCasket</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_Defense</defName>
+							<label>Ship Defense System</label>
+							<description>Ship passive and reactive defense system.</description>
+							<defNames>
+								<li>ArchotechShieldGenerator</li>
+								<li>ShipCombatShieldGenerator</li>
+								<li>ShipCloakingDevice</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_Pillar</defName>
+							<label>Ship Pillars</label>
+							<description>Special Pillars.</description>
+							<defNames>
+								<li>ShipArchotechPillarA</li>
+								<li>ShipArchotechPillarB</li>
+								<li>ShipArchotechPillarC</li>
+								<li>ShipArchotechPillarD</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_Bay</defName>
+							<label>Ship Bay and Shuttle</label>
+							<description>Ship bay, shuttle and transport.</description>
+							<defNames>
+								<li>ShipShuttleBay</li>
+								<li>ShipSalvageBay</li>
+								<li>PersonalShuttle</li>
+								<li>CargoShuttle</li>
+								<li>HeavyShuttle</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipCommand</defName>
+							<label>Ship Command Center</label>
+							<description>Ship bridges, computer and sensors.</description>
+							<defNames>
+								<li>ShipPilotSeatMini</li>
+								<li>ShipPilotSeat</li>
+								<li>Ship_ComputerCore</li>
+								<li>Ship_Sensors</li>
+								<li>Ship_SensorCluster</li>
+								<li>Ship_SensorClusterAdv</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipCasket</defName>
+							<label>Ship Casket</label>
+							<description>Ship casket for pawns.</description>
+							<defNames>
+								<li>Ship_CryptosleepCasket</li>
+								<li>CrittersleepCasket</li>
+								<li>CrittersleepCasketLarge</li>
+								<li>Cryptonest</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ArchitectSense.DesignationSubCategoryDef>
+							<defName>SubCategory_ShipElectricity</defName>
+							<label>Ship Electricity System</label>
+							<description>Ship electricity supply, batteries and capacitor.</description>
+							<defNames>
+								<li>ShipCapacitor</li>
+								<li>ShipCapacitorSmall</li>
+								<li>Ship_Reactor</li>
+								<li>ArchotechAntimatterReactor</li>
+								<li>ShipInside_SolarGenerator</li>
+								<li>ShipInside_SolarGeneratorMech</li>
+								<li>ShipInside_SolarGeneratorArchotech</li>
+							</defNames>
+							<designationCategory>Ship</designationCategory>
+							<debug>false</debug>
+						</ArchitectSense.DesignationSubCategoryDef>
+					</value>
+				</li>
+		
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- ========== Ship_HologramRelay ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_HologramRelay"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>5</ComponentUltra>
+							<MagneticMaterial>10</MagneticMaterial>
+							<AdvMechanism>10</AdvMechanism>
+							<RobotParts>20</RobotParts>
+							<Microchips>2</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Ship_HologramRelay"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+			
+				<!-- ========== Ship_AvatarCasket ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ship_AvatarCasket"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentUltra>10</ComponentUltra>
+							<MagneticMaterial>20</MagneticMaterial>
+							<AdvMechanism>20</AdvMechanism>
+							<RobotParts>20</RobotParts>
+							<Microchips>4</Microchips>
+							<GoldBar>100</GoldBar>
+							<AlphaPoly>10</AlphaPoly>
+							<ReinforcedGlass>20</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Ship_AvatarCasket"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+						</stuffCategories>
+						<costStuffCount>300</costStuffCount>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

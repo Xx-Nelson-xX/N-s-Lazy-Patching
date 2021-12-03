@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ========== ShipHeatConduit ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHeatConduit"]/costList</xpath>
+					<value>
+						<costList>
+							<Wire>1</Wire>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHeatConduit"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>8</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipHeatConduit"]/constructEffect</xpath>
+				</li>
+				
+				<!-- ========== ShipHeatsink ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHeatsink"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>2</ComponentSpacer>
+							<ComponentIndustrial>4</ComponentIndustrial>
+							<CopperBar>80</CopperBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHeatsink"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipHeatsinkLarge ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHeatsinkLarge"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>2</ComponentSpacer>
+							<Electronics>2</Electronics>
+							<ComponentAdvanced>4</ComponentAdvanced>
+							<CopperBar>240</CopperBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipHeatsinkLarge"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>400</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipHeatManifold ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipHeatManifold"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>1</ComponentSpacer>
+							<Electronics>1</Electronics>
+							<ComponentAdvanced>2</ComponentAdvanced>
+							<CopperBar>60</CopperBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ShipHeatManifold"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>80</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipCombatShieldGenerator ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipCombatShieldGenerator"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<ElectronicComponents>12</ElectronicComponents>
+							<Electronics>2</Electronics>
+							<SilverBar>120</SilverBar>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipCombatShieldGenerator"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>60</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipCombatShieldGenerator"]/constructEffect</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipCombatShieldGenerator"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_Laser ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_Laser"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>4</ComponentSpacer>
+							<ReinforcedGlass>60</ReinforcedGlass>
+							<DepletedUranium>20</DepletedUranium>
+							<Electronics>1</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Laser"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Laser"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_Laser_Large ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_Laser_Large"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<ReinforcedGlass>120</ReinforcedGlass>
+							<DepletedUranium>60</DepletedUranium>
+							<Electronics>2</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Laser_Large"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>300</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Laser_Large"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_Plasma ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_Plasma"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>4</ComponentSpacer>
+							<Ceramics>60</Ceramics>
+							<GoldBar>60</GoldBar>
+							<Electronics>1</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Plasma"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>100</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Plasma"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_Plasma_Large ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_Plasma_Large"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<Ceramics>180</Ceramics>
+							<GoldBar>150</GoldBar>
+							<Electronics>1</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Plasma_Large"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>300</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Plasma_Large"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_Kinetic ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_Kinetic"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>8</ComponentSpacer>
+							<AdvMechanism>2</AdvMechanism>
+							<Microchips>1</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Kinetic"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>150</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Kinetic"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTurret_Kinetic_Large ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTurret_Kinetic_Large"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>16</ComponentSpacer>
+							<AdvMechanism>5</AdvMechanism>
+							<Microchips>2</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Kinetic_Large"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>450</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipTurret_Kinetic_Large"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipTorpedoOne ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTorpedoOne"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>6</ComponentSpacer>
+							<AdvMechanism>2</AdvMechanism>
+							<Electronics>1</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTorpedoOne"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipTorpedoTwo ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTorpedoTwo"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<AdvMechanism>4</AdvMechanism>
+							<Electronics>2</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTorpedoTwo"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>200</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipTorpedoSix ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipTorpedoSix"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>30</ComponentSpacer>
+							<AdvMechanism>12</AdvMechanism>
+							<Electronics>3</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipTorpedoSix"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>420</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipSpinalAmplifier ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSpinalAmplifier"]/costList</xpath>
+					<value>
+						<costList>
+							<ElectronicComponents>12</ElectronicComponents>
+							<Electronics>2</Electronics>
+							<MagneticMaterial>20</MagneticMaterial>
+							<DepletedUranium>30</DepletedUranium>
+							<Titanium>60</Titanium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalAmplifier"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipSpinalAmplifier"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipSpinalEmitter ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSpinalEmitter"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>12</ComponentSpacer>
+							<Electronics>4</Electronics>
+							<MagneticMaterial>20</MagneticMaterial>
+							<DepletedUranium>30</DepletedUranium>
+							<Titanium>60</Titanium>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalEmitter"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>180</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ShipSpinalEmitter"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipSpinalBarrelLaser ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelLaser"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>18</ComponentSpacer>
+							<ReinforcedGlass>180</ReinforcedGlass>
+							<DepletedUranium>100</DepletedUranium>
+							<Electronics>6</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelLaser"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>400</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelLaser"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipSpinalBarrelPlasma ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelPlasma"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>18</ComponentSpacer>
+							<Ceramics>240</Ceramics>
+							<GoldBar>200</GoldBar>
+							<Electronics>6</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelPlasma"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>400</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelPlasma"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== ShipSpinalBarrelKinetic ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelKinetic"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>26</ComponentSpacer>
+							<AdvMechanism>8</AdvMechanism>
+							<Microchips>3</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelKinetic"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>550</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="ShipSpinalBarrelKinetic"]/designatorDropdown</xpath>
+				</li>
+				
+				<!-- ========== HullFoamDistributor ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HullFoamDistributor"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>8</ComponentSpacer>
+							<AdvMechanism>1</AdvMechanism>
+							<Electronics>2</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="HullFoamDistributor"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipPurgePort ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipPurgePort"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>12</ComponentIndustrial>
+							<ComponentAdvanced>4</ComponentAdvanced>
+							<AdvMechanism>2</AdvMechanism>
+							<Electronics>1</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipPurgePort"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>125</costStuffCount>
+					</value>
+				</li>
+				
+				<!-- ========== ShipPurgePortLarge ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipPurgePortLarge"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>24</ComponentIndustrial>
+							<ComponentAdvanced>8</ComponentAdvanced>
+							<AdvMechanism>6</AdvMechanism>
+							<Electronics>3</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipPurgePortLarge"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>625</costStuffCount>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
