@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+			
+	<Operation Class="PatchOperationRemove">	
+		<xpath>Defs/ThingDef[defName="VG_Ibuprofen"]/statBases/Nutrition</xpath>
+	</Operation>
+	
+	<!-- == Beserk Herb is 0.1 bulk == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="VG_Ibuprofen" or defName="Methadone" or defName="ActivatedCarbon"]/statBases</xpath>
+		<value>
+			<Bulk>0.05</Bulk>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TobaccoCigarChocolate" or defName="TobaccoCigar"]/statBases</xpath>
+		<value>
+			<Bulk>0.1</Bulk>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TobaccoCigarette"]/statBases</xpath>
+		<value>
+			<Bulk>0.06</Bulk>
+		</value>
+	</Operation>
+	
+</Patch>

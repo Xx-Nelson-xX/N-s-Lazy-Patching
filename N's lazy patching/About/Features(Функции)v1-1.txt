@@ -1,0 +1,44 @@
+Features:
+- Ideology DLC slab bed patch
+- Nerf Anthis (half second delay to jump) -------------> Removed due the latest Dev Branch update
+- Patch some HSK buildings making them reinstallable
+- Remove nutrition value for medicine(Pills specially)
+- Mousewheel reinstallation
+- Animation patches
+- BnC CE patch for toys
+- Reduced bulk for RJW items and added a recipe to the Butcher table
+- Reduced HSK drug's bulk
+- No disturbed sleep
+- Latest HSK "smeltProduct but smeltable=false" fix
+- SOS2.5 patch for HSK 1.3(for now, 1.2 support in queue)
+
+Like I said, you are free to remove any patch you don't want/need
+
+Функции:
+- Заплатка кровати плиты Ideology DLC
+- Нерф Антис (задержка в полсекунды до прыжка) -------------> Удалено из-за последнего обновления Dev Branch
+- Исправьте некоторые здания HSK, сделав их переустанавливаемыми.
+- Убрать пищевую ценность для лекарств (особенно для таблеток)
+- Переустановка колесика мыши
+- Патчи анимации
+- Патч BnC CE для игрушек
+- Уменьшена масса предметов RJW и добавлен рецепт на стол мясника.
+- Лекарства HSK с пониженной массой
+- Убрать нарушенный сон
+- Последнее исправление HSK "smeltProduct but smeltable = false"
+- Патч SOS2.5 для HSK 1.3 (пока поддержка 1.2 в очереди)
+
+Как я уже сказал, вы можете удалить любой патч, который вам не нужен.
+
+Almost forgot this, thanks for following people who helped me patching stuff, either as using their reference or direct involvement:
+Чуть не забыл об этом, спасибо за следующих людей, которые помогли мне исправить вещи, используя свои рекомендации или непосредственное участие:
+
++Sidfu				+Zachary-Foster
++Âbräxas			+DimaKitsenko
++TORY187			+Dusty Breeches
++CnArmor			+BLAKIL
+
+And lastly... you :D
+И напоследок ... вы :D
+
+
