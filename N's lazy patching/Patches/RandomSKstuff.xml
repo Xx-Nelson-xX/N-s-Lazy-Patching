@@ -9,8 +9,8 @@
 		</value>
 	</Operation>
 	
-	<!-- TradingSpot -->
-	<Operation Class="PatchOperationAdd">	
+	<!-- TradingSpot (Under suspect of breaking the caravan spawn)-->
+	<!--<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="TradingSpot"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -22,7 +22,7 @@
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="TradingSpot"]/building</xpath>
 		<value>
-				<uninstallWork>800</uninstallWork>
+			<uninstallWork>800</uninstallWork>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">	
@@ -31,7 +31,7 @@
 			<Bulk>200</Bulk>
 			<Mass>10</Mass>
 		</value>
-	</Operation>
+	</Operation>-->
 	
 	<!-- FueledStove -->
 	<Operation Class="PatchOperationAdd">	
@@ -46,7 +46,7 @@
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="FueledStove"]/building</xpath>
 		<value>
-				<uninstallWork>800</uninstallWork>
+			<uninstallWork>800</uninstallWork>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">	
@@ -70,7 +70,7 @@
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="PassiveCooler"]/building</xpath>
 		<value>
-				<uninstallWork>200</uninstallWork>
+			<uninstallWork>200</uninstallWork>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">	
@@ -94,7 +94,7 @@
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="ColdstonePassiveCooler"]/building</xpath>
 		<value>
-				<uninstallWork>200</uninstallWork>
+			<uninstallWork>200</uninstallWork>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">	
@@ -102,6 +102,54 @@
 		<value>
 			<Bulk>20</Bulk>
 			<Mass>10</Mass>
+		</value>
+	</Operation>
+	
+	<!-- TableSawmillElectric -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableSawmillElectric"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsProduction</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableSawmillElectric"]/building</xpath>
+		<value>
+			<uninstallWork>1600</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableSawmillElectric"]/statBases</xpath>
+		<value>
+			<Bulk>500</Bulk>
+			<Mass>750</Mass>
+		</value>
+	</Operation>
+	
+	<!-- TableMachining -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableMachining"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsProduction</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableMachining"]/building</xpath>
+		<value>
+			<uninstallWork>1500</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableMachining"]/statBases</xpath>
+		<value>
+			<Bulk>400</Bulk>
+			<Mass>600</Mass>
 		</value>
 	</Operation>
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="LWM_DeepStorage">
+		<defName>ammo_1size</defName>
+		<label>single storage ammo box</label>
+		<description>A barrel made of wood or metal. Used to store various things inside. Up to 1 items.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Containers/explossbox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.7, 0.3, 0.7)</volume>
+			</shadowData>
+		</graphicData>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Beauty>-3</Beauty>
+			<Bulk>25</Bulk>
+			<Mass>9</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Corpses</li>
+						<li>Chunks</li>
+						<li>StoneBlocks</li>
+					</disallowedCategories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+		<comps>
+			<li Class="LWM.DeepStorage.Properties">
+				<maxNumberStacks>1</maxNumberStacks>
+				<minTimeStoringTakes>15</minTimeStoringTakes>
+				<additionalTimeEachStack>15</additionalTimeEachStack>
+				<showContents>true</showContents>
+				<overlayType>SumOfItemsPerCell</overlayType>
+			</li>
+		</comps>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	</Defs>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- == Wool for Wooly Animals == -->
+	<!-- == Wooly Horse == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Horse_Wooly"]</xpath>
+		<value>
+			<comps Inherit="False">
+				<li Class="CompProperties_Milkable">
+					<milkDef>Milk</milkDef>
+					<milkIntervalDays>3</milkIntervalDays>
+					<milkAmount>12</milkAmount>
+				</li>
+				<li Class="CompProperties_Shearable">
+					<woolDef>WoolMuffalo</woolDef>
+					<shearIntervalDays>10</shearIntervalDays>
+					<woolAmount>60</woolAmount>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<!-- == Wooly Horse == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Rhino_Wooly"]</xpath>
+		<value>
+			<comps>
+				<li Class="CompProperties_Milkable">
+					<milkDef>Milk</milkDef>
+					<milkIntervalDays>2</milkIntervalDays>
+					<milkAmount>20</milkAmount>
+				</li>
+				<li Class="CompProperties_Shearable">
+					<woolDef>WoolMuffalo</woolDef>
+					<shearIntervalDays>15</shearIntervalDays>
+					<woolAmount>105</woolAmount>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<!-- == Thrumbo == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Thrumbo"]</xpath>
+		<value>
+			<comps>
+				<li Class="CompProperties_Milkable">
+					<milkDef>Milk</milkDef>
+					<milkIntervalDays>2</milkIntervalDays>
+					<milkAmount>30</milkAmount>
+				</li>
+				<li Class="CompProperties_Shearable">
+					<woolDef>Leather_Thrumbo</woolDef>
+					<shearIntervalDays>15</shearIntervalDays>
+					<woolAmount>75</woolAmount>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<!-- == Some love for Dragons and Wyvern == -->
+	<!-- == Wooly Horse == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Feenix"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Leather_FireDragonskin</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>30</woolAmount>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

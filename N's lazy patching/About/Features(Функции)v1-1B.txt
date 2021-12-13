@@ -1,0 +1,48 @@
+Features: "-" = HSK 	"+" = DLCs		"*" = 3rd party
+
++ Ideology						->	Ideology DLC slab bed patch
+- RandomSKstuff					->	Patch some HSK buildings making them reinstallable
+- NoNutritionforMed				->	Remove nutrition value for medicine(Pills specially)
+* RatkinMouseWheel 				->	Mousewheel reinstallation
+* AnimationPatchHSK				->	Animation patches
+* BnCDollsCEpatch				->	BnC CE patch for toys
+* RJWBulk	 					->	 Reduced bulk for RJW items and added a recipe to the Butcher table
+- DrugBulkOverhaul				->	Reduced HSK drug's bulk
+- NoDisturbedSleepPatch			->	No disturbed sleep
+- Smeltableweaponwithproduct	->	Latest HSK "smeltProduct but smeltable=false" fix -------------> Removed due the latest Dev Branch update
+* SOS2HSKPatch					->	SOS2.5 patch for HSK 1.3(for now, 1.2 support in queue)
+- 1blockstorage					->	Single-Block Storage is back(Sidfu's old feature)
+- AnimalHusbandry				->	Add wool shedding and scale harvesting for some animals
+
+Like I said, you are free to remove any patch you don't want/need
+
+Функции: "-" = HSK 	"+" = DLCs		"*" = Сторонний
+
++ Ideology						->	Заплатка кровати плиты Ideology DLC
+- RandomSKstuff					->	Исправьте некоторые здания HSK, сделав их переустанавливаемыми.
+- NoNutritionforMed				->	Убрать пищевую ценность для лекарств (особенно для таблеток)
+* RatkinMouseWheel 				->	Переустановка колесика мыши
+* AnimationPatchHSK				->	Патчи анимации
+* BnCDollsCEpatch				->	Патч BnC CE для игрушек
+* RJWBulk	 					->	Уменьшена масса предметов RJW и добавлен рецепт на стол мясника.
+- DrugBulkOverhaul				->	Лекарства HSK с пониженной массой
+- NoDisturbedSleepPatch			->	Убрать нарушенный сон
+- Smeltableweaponwithproduct	->	Последнее исправление HSK "smeltProduct but smeltable = false" -------------> Удалено из-за последнего обновления Dev Branch
+* SOS2HSKPatch					->	Патч SOS2.5 для HSK 1.3 (пока поддержка 1.2 в очереди)
+- 1blockstorage					->	Одноблочное хранилище возвращается (старая функция Sidfu)
+- AnimalHusbandry				->	Добавлена ​​линька шерсти и сбор чешуи для некоторых животных.
+
+Как я уже сказал, вы можете удалить любой патч, который вам не нужен.
+
+Almost forgot this, thanks for following people who helped me patching stuff, either as using their reference or direct involvement:
+Чуть не забыл об этом, спасибо за следующих людей, которые помогли мне исправить вещи, используя свои рекомендации или непосредственное участие:
+
++Sidfu				+Zachary-Foster
++Âbräxas			+DimaKitsenko
++TORY187			+Dusty Breeches
++CnArmor			+BLAKIL
+
+And lastly... you :D
+И напоследок ... вы :D
+
+
