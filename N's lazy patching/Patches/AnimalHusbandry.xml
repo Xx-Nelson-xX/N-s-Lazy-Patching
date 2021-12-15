@@ -17,6 +17,7 @@
 					<shearIntervalDays>10</shearIntervalDays>
 					<woolAmount>60</woolAmount>
 				</li>
+				<li Class="Rimworld_Animations.CompProperties_BodyAnimator" />
 			</comps>
 		</value>
 	</Operation>
