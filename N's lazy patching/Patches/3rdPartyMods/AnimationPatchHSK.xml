@@ -19,7 +19,7 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name="BaseAnimalPawn" or @Name="SK_BasePawn"]/comps</xpath>
+					<xpath>Defs/ThingDef[@Name="BaseAnimalPawn" or @Name="SK_BasePawn" or @Name="BasePawnSkynet"]/comps</xpath>
 					<value>
 						<li Class="Rimworld_Animations.CompProperties_BodyAnimator" />
 					</value>

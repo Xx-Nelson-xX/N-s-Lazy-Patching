@@ -6,23 +6,17 @@
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="Horse_Wooly"]</xpath>
 		<value>
-			<comps Inherit="False">
-				<li Class="CompProperties_Milkable">
-					<milkDef>Milk</milkDef>
-					<milkIntervalDays>3</milkIntervalDays>
-					<milkAmount>12</milkAmount>
-				</li>
+			<comps>
 				<li Class="CompProperties_Shearable">
 					<woolDef>WoolMuffalo</woolDef>
 					<shearIntervalDays>10</shearIntervalDays>
 					<woolAmount>60</woolAmount>
 				</li>
-				<li Class="Rimworld_Animations.CompProperties_BodyAnimator" />
 			</comps>
 		</value>
 	</Operation>
 	
-	<!-- == Wooly Horse == -->
+	<!-- == Wooly Rhino == -->
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="Rhino_Wooly"]</xpath>
 		<value>
@@ -60,13 +54,73 @@
 		</value>
 	</Operation>
 	
-	<!-- == Some love for Dragons and Wyvern == -->
-	<!-- == Wooly Horse == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Thrumbo"]/race</xpath>
+		<value>
+			<packAnimal>true</packAnimal>
+		</value>
+	</Operation>
+	
+	<!-- == Some love for Dragons and Wyvern(Exotic Animals) == -->
+	<!-- == Feenix == -->
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="Feenix"]/comps</xpath>
 		<value>
 			<li Class="CompProperties_Shearable">
 				<woolDef>Leather_FireDragonskin</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>30</woolAmount>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- == Kirin == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Kirin"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Leather_KirinHide</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>30</woolAmount>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- == GreenWyvern & Behir == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="GreenWyvern" or defName="Behir"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Leather_Thrumbo</woolDef>
+				<shearIntervalDays>10</shearIntervalDays>
+				<woolAmount>30</woolAmount>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- == FRaptor == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="FRaptor"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Leather_FeatheredRaptorLeather</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>30</woolAmount>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- == Barghest == -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Barghest"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Milkable">
+					<milkDef>Milk</milkDef>
+					<milkIntervalDays>2</milkIntervalDays>
+					<milkAmount>20</milkAmount>
+				</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Leather_BarghestFur</woolDef>
 				<shearIntervalDays>15</shearIntervalDays>
 				<woolAmount>30</woolAmount>
 			</li>

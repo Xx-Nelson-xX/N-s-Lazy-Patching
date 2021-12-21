@@ -97,6 +97,35 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>ExtractSeed_Meatbush</defName>
+							<label>extract Meatbush seeds</label>
+							<description>Extract seeds from Meatbush</description>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Meat_Muffalo</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>Meat_Muffalo</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<Seed_Meatbush>3</Seed_Meatbush>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
     </Operation>
