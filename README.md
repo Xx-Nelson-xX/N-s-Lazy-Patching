@@ -23,4 +23,5 @@ QoL, исправления совместимости и патчи балан�
 Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
 
 THANKS FOR USING THE MOD :D
+
 СПАСИБО ЗА ИСПОЛЬЗОВАНИЕ МОДА :D
