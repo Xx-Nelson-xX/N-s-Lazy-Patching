@@ -9,8 +9,8 @@
 		</value>
 	</Operation>
 	
-	<!-- TradingSpot (Under suspect of breaking the caravan spawn)-->
-	<!--<Operation Class="PatchOperationAdd">	
+	<!-- TradingSpot (Uninstall it then place it, you can't reinstall it due is count like additional one lol)-->
+	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="TradingSpot"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -31,7 +31,7 @@
 			<Bulk>200</Bulk>
 			<Mass>10</Mass>
 		</value>
-	</Operation>-->
+	</Operation>
 	
 	<!-- FueledStove -->
 	<Operation Class="PatchOperationAdd">	
@@ -150,6 +150,75 @@
 		<value>
 			<Bulk>400</Bulk>
 			<Mass>600</Mass>
+		</value>
+	</Operation>
+	
+	<!-- ElectricSmelter -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ElectricSmelter"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsProduction</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ElectricSmelter"]/building</xpath>
+		<value>
+			<uninstallWork>1650</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ElectricSmelter"]/statBases</xpath>
+		<value>
+			<Bulk>500</Bulk>
+			<Mass>800</Mass>
+		</value>
+	</Operation>
+	
+	<!-- ElectricSmithy -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ElectricSmithy"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsProduction</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ElectricSmithy"]/building</xpath>
+		<value>
+			<uninstallWork>1650</uninstallWork>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="ElectricSmithy"]/statBases</xpath>
+		<value>
+			<Bulk>500</Bulk>
+			<Mass>800</Mass>
+		</value>
+	</Operation>
+	
+	<!-- TableElectronics -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableElectronics"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsProduction</li>
+			</thingCategories>
+			<building>
+				<uninstallWork>1400</uninstallWork>
+			</building>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="TableElectronics"]/statBases</xpath>
+		<value>
+			<Bulk>300</Bulk>
+			<Mass>500</Mass>
 		</value>
 	</Operation>
 

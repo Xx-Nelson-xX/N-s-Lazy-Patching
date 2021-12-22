@@ -8,12 +8,6 @@
 			<operations>
 				
 				<!-- ========== Hologram Mics ========== -->
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ThingDef[defName="SoSHologramRace"]</xpath>
-					<attribute>ParentName</attribute>
-					<value>SK_BasePawn</value>
-				</li>
-				
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/comps/li[@Class="CompProperties_HologramGlower"]</xpath>
 				</li>
@@ -23,8 +17,6 @@
 					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/statBases/MoveSpeed</xpath>
 					<value>
 						<MoveSpeed>6</MoveSpeed>
-						<MeleeDodgeChance>0</MeleeDodgeChance>
-						<MeleeCritChance>0</MeleeCritChance>
 					</value>
 				</li>
 				

@@ -8,7 +8,7 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<description>
-	Nothing too fancy here, just some amateur patching to keep the debug log clean when certain mod is actived
+	Nothing too fancy here, just some amateur patching to keep the debug log clean
 	</description>
 	<modDependencies>
 		<li>

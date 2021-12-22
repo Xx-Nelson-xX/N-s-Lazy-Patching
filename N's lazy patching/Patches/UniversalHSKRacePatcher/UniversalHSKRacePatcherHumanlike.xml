@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- == BasePawn Replacement == -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@ParentName="BasePawn"]</xpath>
+		<success>Normal</success>
+		<match Class="PatchOperationAttributeSet">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@ParentName="BasePawn"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>SK_BasePawn</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="BasePawn" and @Name="AnimalThingBase"]</xpath>
+		<success>Normal</success>
+		<nomatch Class="PatchOperationAttributeSet">
+			<xpath>Defs/ThingDef[@ParentName="BasePawn"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>SK_BasePawn</value>
+		</nomatch>
+	</Operation>
+	
+</Patch>

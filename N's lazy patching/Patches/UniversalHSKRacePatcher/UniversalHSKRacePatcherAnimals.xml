@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- == AnimalThingBase Additions == -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.02</MeleeDodgeChance>
+			<MeleeCritChance>0</MeleeCritChance>
+			<MeleeParryChance>0.07</MeleeParryChance>
+			<GermResistance>0.12</GermResistance>
+			<GermContainment>0.04</GermContainment>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/race/hediffGiverSets</xpath>
+		<value>
+			<li>Animal</li>
+		</value>
+	</Operation>
+	
+</Patch>

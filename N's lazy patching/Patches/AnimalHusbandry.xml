@@ -61,6 +61,14 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Thrumbo"]/statBases</xpath>
+		<value>
+			<CarryWeight>280</CarryWeight>
+			<CarryBulk>200</CarryBulk>
+		</value>
+	</Operation>
+	
 	<!-- == Some love for Dragons and Wyvern(Exotic Animals) == -->
 	<!-- == Feenix == -->
 	<Operation Class="PatchOperationAdd">	
