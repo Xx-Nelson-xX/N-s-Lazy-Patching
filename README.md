@@ -1,5 +1,5 @@
 # N-s-Lazy-Patching
-Nothing too fancy here, just some amateur patching to keep the debug log clean when certain mod is actived
+Nothing too fancy here, just some amateur patching to keep the debug log clean
 
 ![Preview](https://user-images.githubusercontent.com/40744101/144656051-24af5272-b3d2-4c0b-8926-60cc51e4e447.png)
 
@@ -23,4 +23,5 @@ QoL, исправления совместимости и патчи балан�
 Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
 
 THANKS FOR USING THE MOD :D
+
 СПАСИБО ЗА ИСПОЛЬЗОВАНИЕ МОДА :D
