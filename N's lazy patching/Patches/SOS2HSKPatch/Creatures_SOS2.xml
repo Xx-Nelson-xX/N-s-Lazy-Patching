@@ -82,6 +82,13 @@
 						<baseHealthScale>1.3</baseHealthScale>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Astromite"]/statBases/ComfyTemperatureMin</xpath>
+					<value>
+						<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+					</value>
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/PawnKindDef[defName="Astromite"]/combatPower</xpath>

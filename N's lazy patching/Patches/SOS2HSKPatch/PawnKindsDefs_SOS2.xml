@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Patch>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Save Our Ship 2</li>
 		</mods>
-		<match Class="PatchOperationAddModExtension">
-			<xpath>Defs/PawnKindDef[defName="SpaceCannibal"]</xpath>
-			<value>
-			  <li Class="CombatExtended.LoadoutPropertiesExtension">
-				<primaryMagazineCount>
-				  <min>3</min>
-				  <max>6</max>
-				</primaryMagazineCount>
-			  </li>
-			</value>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="SpaceCannibal"]</xpath>
+					<value>
+					  <li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+						  <min>3</min>
+						  <max>6</max>
+						</primaryMagazineCount>
+					  </li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="SpaceCrew"]</xpath>
+					<value>
+					  <li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+						  <min>2</min>
+						  <max>3</max>
+						</primaryMagazineCount>
+					  </li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="SpaceCrewMarine"]</xpath>
+					<value>
+					  <li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+						  <min>3</min>
+						  <max>5</max>
+						</primaryMagazineCount>
+					  </li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="SpaceCrewMarineHeavy"]</xpath>
+					<value>
+					  <li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+						  <min>4</min>
+						  <max>6</max>
+						</primaryMagazineCount>
+					  </li>
+					</value>
+				</li>
+				
+			</operations>
 		</match>
 	</Operation>
+	
 </Patch>
 
