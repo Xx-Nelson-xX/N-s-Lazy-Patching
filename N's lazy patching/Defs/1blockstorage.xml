@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="LWM_DeepStorage">
 		<defName>ammo_1size</defName>
-		<label>single storage ammo box</label>
+		<label>single storage box</label>
 		<description>A barrel made of wood or metal. Used to store various things inside. Up to 1 items.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Containers/explossbox</texPath>

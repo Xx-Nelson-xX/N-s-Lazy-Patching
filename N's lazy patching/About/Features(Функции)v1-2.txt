@@ -13,6 +13,7 @@ Features: "-" = HSK 	"+" = DLCs		"*" = 3rd party
 - 1blockstorage					->	Single-Block Storage is back(Sidfu's old feature)
 - AnimalHusbandry				->	Add wool shedding and scale harvesting for some animals
 * RJWSeedPlease					-> 	Seed Please Patch for RJW's "Hump Shroom"
++ BiosculpterOverhaul			->   Overhaul the Biosculpter(from Ideology DLC)
 * UniversalHSKRacePatcher		->	Patch 3rd Party Race to have basic compatibility with HSK
 
 Note: The "UniversalHSKRacePatcher" technically patch any 3rd party race that use "BasePawn" as parentName to "SK_BasePawn", which make the race compatible with HSK's CE Loadout and Gear Tab, you still need to add their CE Patch manually, is an experimental feature so any problem you have with it please report it to me so I can improve it 
@@ -34,6 +35,7 @@ Like I said, you are free to remove any patch you don't want/need
 - 1blockstorage					->	Одноблочное хранилище возвращается (старая функция Sidfu)
 - AnimalHusbandry				->	Добавлена ​​линька шерсти и сбор чешуи для некоторых животных.
 * RJWSeedPlease					-> 	Seed Please Patch для "Hump Shroom" RJW
++ BiosculpterOverhaul 			-> 	Капитальный ремонт Biosculpter (из DLC «Ideology)
 * UniversalHSKRacePatcher 		->	Патч 3rd Party Race для базовой совместимости с HSK
 
 Примечание: «UniversalHSKRacePatcher» технически исправляет любую стороннюю расу, которая использует «BasePawn» в качестве parentName для «SK_BasePawn», что делает расу совместимой с HSK's CE Loadout и Gear Tab, вам все равно нужно добавить их CE Patch вручную, это экспериментальный функция, поэтому о любых проблемах, которые у вас есть, сообщите мне, чтобы я мог ее улучшить
@@ -47,6 +49,7 @@ Almost forgot this, thanks for following people who helped me patching stuff, ei
 +Âbräxas			+DimaKitsenko
 +TORY187			+Dusty Breeches
 +CnArmor			+BLAKIL
++Nabber
 
 And lastly... you :D
 И напоследок ... вы :D

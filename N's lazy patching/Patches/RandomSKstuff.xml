@@ -221,5 +221,26 @@
 			<Mass>500</Mass>
 		</value>
 	</Operation>
+	
+	<!-- Medical Table -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="meditable"]</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsProduction</li>
+			</thingCategories>
+			<building>
+				<uninstallWork>600</uninstallWork>
+			</building>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="meditable"]/statBases</xpath>
+		<value>
+			<Bulk>100</Bulk>
+			<Mass>150</Mass>
+		</value>
+	</Operation>
 
 </Patch>
