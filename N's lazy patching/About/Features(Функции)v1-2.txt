@@ -5,29 +5,31 @@ Features: "-" = HSK 	"+" = DLCs		"*" = 3rd party
 - NoNutritionforMed				->	Remove nutrition value for medicine(Pills specially)
 * RatkinMouseWheel 				->	Mousewheel reinstallation
 * AnimationPatchHSK				->	Animation patches
-* BnCDollsCEpatch				->	BnC CE patch for toys
-* RJWBulk	 					->	 Reduced bulk for RJW items and added a recipe to the Butcher table
+* BnCpatch						->	patch for "Babies and Children" mod
+* RJWBulk	 					->	Reduced bulk for RJW items and added a recipe to the Butcher table
 - DrugBulkOverhaul				->	Reduced HSK drug's bulk
 - NoDisturbedSleepPatch			->	No disturbed sleep
 * SOS2HSKPatch					->	SOS2.5 patch for HSK 1.3(for now, 1.2 support in queue)
 - 1blockstorage					->	Single-Block Storage is back(Sidfu's old feature)
 - AnimalHusbandry				->	Add wool shedding and scale harvesting for some animals
 * RJWSeedPlease					-> 	Seed Please Patch for RJW's "Hump Shroom"
-+ BiosculpterOverhaul			->   Overhaul the Biosculpter(from Ideology DLC)
+* AsariRaceMilkPatch			->	Asari Milk patch for Milkable Colonist(RJW)
++ BiosculpterOverhaul			->  Overhaul the Biosculpter(from Ideology DLC)
 * UniversalHSKRacePatcher		->	Patch 3rd Party Race to have basic compatibility with HSK
+- InorganicMatter+				->	Extra Recipe for the Inorganic Matter Converter
 
 Note: The "UniversalHSKRacePatcher" technically patch any 3rd party race that use "BasePawn" as parentName to "SK_BasePawn", which make the race compatible with HSK's CE Loadout and Gear Tab, you still need to add their CE Patch manually, is an experimental feature so any problem you have with it please report it to me so I can improve it 
 
 Like I said, you are free to remove any patch you don't want/need
 
-Функции: "-" = HSK 	"+" = DLCs		"*" = Сторонний
+Функции: "-" = HSK 	  	"+" = DLCs		"*" = Сторонний
 
 + Ideology						->	Заплатка кровати плиты Ideology DLC
 - RandomSKstuff					->	Исправьте некоторые здания HSK, сделав их переустанавливаемыми.
 - NoNutritionforMed				->	Убрать пищевую ценность для лекарств (особенно для таблеток)
 * RatkinMouseWheel 				->	Переустановка колесика мыши
 * AnimationPatchHSK				->	Патчи анимации
-* BnCDollsCEpatch				->	Патч BnC CE для игрушек
+* BnCpatch 						->  патч для мода "Babies and Children"
 * RJWBulk	 					->	Уменьшена масса предметов RJW и добавлен рецепт на стол мясника.
 - DrugBulkOverhaul				->	Лекарства HSK с пониженной массой
 - NoDisturbedSleepPatch			->	Убрать нарушенный сон
@@ -35,12 +37,15 @@ Like I said, you are free to remove any patch you don't want/need
 - 1blockstorage					->	Одноблочное хранилище возвращается (старая функция Sidfu)
 - AnimalHusbandry				->	Добавлена ​​линька шерсти и сбор чешуи для некоторых животных.
 * RJWSeedPlease					-> 	Seed Please Patch для "Hump Shroom" RJW
+* AsariRaceMilkPatch 			->  Патч Asari Milk для Milkable Colonist (RJW)
 + BiosculpterOverhaul 			-> 	Капитальный ремонт Biosculpter (из DLC «Ideology)
 * UniversalHSKRacePatcher 		->	Патч 3rd Party Race для базовой совместимости с HSK
+- InorganicMatter+				->  Дополнительный рецепт преобразователя неорганической материи
 
 Примечание: «UniversalHSKRacePatcher» технически исправляет любую стороннюю расу, которая использует «BasePawn» в качестве parentName для «SK_BasePawn», что делает расу совместимой с HSK's CE Loadout и Gear Tab, вам все равно нужно добавить их CE Patch вручную, это экспериментальный функция, поэтому о любых проблемах, которые у вас есть, сообщите мне, чтобы я мог ее улучшить
 
 Как я уже сказал, вы можете удалить любой патч, который вам не нужен.
+
 
 Almost forgot this, thanks for following people who helped me patching stuff, either as using their reference or direct involvement:
 Чуть не забыл об этом, спасибо за следующих людей, которые помогли мне исправить вещи, используя свои рекомендации или непосредственное участие:

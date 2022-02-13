@@ -242,5 +242,14 @@
 			<Mass>150</Mass>
 		</value>
 	</Operation>
+	
+	<!-- Inorganic Matter Converter -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="MatterConverter"]/recipes</xpath>
+		<value>
+			<li>ConvertToWolframite</li>
+			<li>ConvertToNitre</li>
+		</value>
+	</Operation>
 
 </Patch>

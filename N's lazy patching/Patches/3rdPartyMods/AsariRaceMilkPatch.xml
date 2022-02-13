@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimJobWorld - Milkable Colonists</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/comps</xpath>
+					<value>
+						<li Class="Milk.CompProperties_MilkableHuman">
+							<milkDef>HumanoidMilk</milkDef>
+							<milkIntervalDays>3</milkIntervalDays>
+							<milkAmount>12</milkAmount>
+							<milkFemaleOnly>false</milkFemaleOnly>
+						</li>
+						<li Class="Milk.CompProperties_HyperMilkableHuman">
+							<milkDef>HumanoidMilk</milkDef>
+							<milkIntervalDays>1</milkIntervalDays>
+							<milkAmount>12</milkAmount>
+							<milkFemaleOnly>false</milkFemaleOnly>
+						</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
