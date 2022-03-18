@@ -13,6 +13,17 @@
 				</li>
 				
 				<!-- ========== Hologram Race ========== -->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/race/useMeatFrom</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/race</xpath>
+					<value>
+						<useMeatFrom>Human</useMeatFrom>
+					</value>
+				</li>
+				
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/statBases/MoveSpeed</xpath>
 					<value>

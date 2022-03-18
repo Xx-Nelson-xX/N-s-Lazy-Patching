@@ -8,7 +8,7 @@
 			<operations>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Dino_Doll" or defName="Girl_Doll" or defName="Toyrobot_Doll" or defName="Teddybear_Doll"]/tools</xpath>
+					<xpath>Defs/ThingDef[defName="Toyhorse_Doll" or defName="Dino_Doll" or defName="Girl_Doll" or defName="Toyrobot_Doll" or defName="Teddybear_Doll"]/tools</xpath>
 					<value>
 						<tools>
 						  <li Class="CombatExtended.ToolCE">

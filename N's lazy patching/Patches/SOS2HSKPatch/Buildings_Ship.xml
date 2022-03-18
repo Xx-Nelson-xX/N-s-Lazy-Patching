@@ -43,23 +43,25 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationReplace">	
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Ship_Beam"]/costStuffCount</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName="Ship_Beam"]/stuffCategories</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Beam"]</xpath>
 					<value>
 						<stuffCategories>
 							<li>RuggedMetallic</li>
 						</stuffCategories>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">	
-					<xpath>Defs/ThingDef[defName="Ship_Beam"]/costStuffCount</xpath>
-					<value>
 						<costStuffCount>20</costStuffCount>
 					</value>
 				</li>
 				
-				<li Class="PatchOperationRemove">	
+				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName="Ship_Beam"]/designatorDropdown</xpath>
 				</li>
 				
@@ -378,18 +380,20 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationReplace">	
+				<li Class="PatchOperationRemove">	
 					<xpath>Defs/ThingDef[defName="Ship_Engine"]/stuffCategories</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine"]/costStuffCount</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Engine"]</xpath>
 					<value>
 						<stuffCategories>
 							<li>RuggedMetallic</li>
 						</stuffCategories>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">	
-					<xpath>Defs/ThingDef[defName="Ship_Engine"]/costStuffCount</xpath>
-					<value>
 						<costStuffCount>200</costStuffCount>
 					</value>
 				</li>
@@ -514,18 +518,20 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationReplace">	
+				<li Class="PatchOperationRemove">	
 					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]/stuffCategories</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]/costStuffCount</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]</xpath>
 					<value>
 						<stuffCategories>
 							<li>RuggedMetallic</li>
 						</stuffCategories>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">	
-					<xpath>Defs/ThingDef[defName="Ship_ComputerCore"]/costStuffCount</xpath>
-					<value>
 						<costStuffCount>150</costStuffCount>
 					</value>
 				</li>
@@ -697,18 +703,20 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationReplace">	
+				<li Class="PatchOperationRemove">	
 					<xpath>Defs/ThingDef[defName="Ship_Reactor"]/stuffCategories</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_Reactor"]/costStuffCount</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_Reactor"]</xpath>
 					<value>
 						<stuffCategories>
 							<li>RuggedMetallic</li>
 						</stuffCategories>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">	
-					<xpath>Defs/ThingDef[defName="Ship_Reactor"]/costStuffCount</xpath>
-					<value>
 						<costStuffCount>500</costStuffCount>
 					</value>
 				</li>
@@ -774,12 +782,21 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationReplace">	
+				<li Class="PatchOperationRemove">	
 					<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]/stuffCategories</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">	
+					<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]/costStuffCount</xpath>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="Ship_CryptosleepCasket"]</xpath>
 					<value>
 						<stuffCategories>
 							<li>RuggedMetallic</li>
 						</stuffCategories>
+						<costStuffCount>60</costStuffCount>
 					</value>
 				</li>
 				
