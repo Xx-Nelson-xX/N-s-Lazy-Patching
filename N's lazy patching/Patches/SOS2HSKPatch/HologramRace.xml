@@ -13,8 +13,10 @@
 				</li>
 				
 				<!-- ========== Hologram Race ========== -->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="SoSHologramRace"]/race/useMeatFrom</xpath>
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/ThingDef[defName="SoSHologramRace"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_BasePawn</value>
 				</li>
 				
 				<li Class="PatchOperationAdd">
@@ -83,6 +85,7 @@
 								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 								<chanceFactor>0.2</chanceFactor>
 								<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+								<armorPenetrationSharp>0.1</armorPenetrationSharp>
 							</li>
 						</tools>
 					</value>
