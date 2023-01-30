@@ -746,6 +746,27 @@
 					</value>
 				</li>
 				
+				<!-- ========== ShipShuttleBayLarge ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ShipShuttleBayLarge"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentSpacer>16</ComponentSpacer>
+							<Electronics>5</Electronics>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipShuttleBayLarge"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>400</costStuffCount>
+					</value>
+				</li>
+				
 				<!-- ========== ShipSalvageBay ========== -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="ShipSalvageBay"]/costList</xpath>

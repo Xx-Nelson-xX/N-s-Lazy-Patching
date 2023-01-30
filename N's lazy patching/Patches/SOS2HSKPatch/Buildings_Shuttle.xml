@@ -79,6 +79,30 @@
 						<costStuffCount>600</costStuffCount>
 					</value>
 				</li>
+				
+				<!-- ========== DropshipShuttle ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DropshipShuttle"]/costList</xpath>
+					<value>
+						<costList>
+							<Wire>220</Wire>
+							<ComponentSpacer>60</ComponentSpacer>
+							<ReinforcedGlass>150</ReinforcedGlass>
+							<ElectronicComponents>20</ElectronicComponents>
+							<Microchips>5</Microchips>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DropshipShuttle"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>1000</costStuffCount>
+					</value>
+				</li>
 
 			</operations>
 		</match>

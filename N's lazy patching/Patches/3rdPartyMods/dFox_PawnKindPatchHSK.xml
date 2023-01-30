@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[Ab] Demi Fox</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- Refugee -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[race="dFox_DemiFox"][defName="Refugee_dFox"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>80~200</weaponMoney>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[race="dFox_DemiFox"][defName="Mercenary_Shooter_dFox"]/backstoryCategories</xpath>
+					<value>
+						<!--<backstoryCategories>-->
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[race="dFox_DemiFox"][defName="Mercenary_Shooter_dFox"]/backstoryFiltersOverride</xpath>
+					<value>
+						<!--<backstoryFiltersOverride>-->
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/rjw.RaceGroupDef[defName="dFox_Fox_Race"]/backstoryChildTribal</xpath>
+					<value>
+						<!--<backstoryChildTribal>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_SplitTailChildhood</li>
+							<li>dFox_StuntedTailChildhood</li>
+						</backstoryChildTribal>-->
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/rjw.RaceGroupDef[defName="dFox_Fox_Race"]/backstoryChildCivil</xpath>
+					<value>
+						<!--<backstoryChildCivil>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_StandardChildhood</li>
+							<li>dFox_SplitTailChildhood</li>
+							<li>dFox_StuntedTailChildhood</li>
+						</backstoryChildCivil>-->
+					</value>
+				</li>
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

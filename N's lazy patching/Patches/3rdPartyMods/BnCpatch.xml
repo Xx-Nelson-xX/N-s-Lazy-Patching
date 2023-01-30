@@ -7,6 +7,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				
+				<!-- ===== Dolls CE Patch ===== -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Toyhorse_Doll" or defName="Dino_Doll" or defName="Girl_Doll" or defName="Toyrobot_Doll" or defName="Teddybear_Doll"]/tools</xpath>
 					<value>
@@ -27,8 +28,21 @@
 					</value>
 				</li>
 				
-				<!-- ===== Stage Limits ===== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="BaseDollToy"]/statBases</xpath>
+					<value>
+						<statBases>
+						  <DeteriorationRate>2</DeteriorationRate>
+						  <MaxHitPoints>30</MaxHitPoints>
+						  <Beauty>3</Beauty>
+						  <WorkToMake>9000</WorkToMake>
+						  <Mass>0.3</Mass>
+						  <SellPriceFactor>0.90</SellPriceFactor>
+						</statBases>
+					</value>
+				</li>
 				
+				<!-- ===== Stage Limits ===== -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/HediffDef[defName="BabyState0"]/stages/li[label="toddler"]/capMods</xpath>
 					<value>
@@ -46,6 +60,16 @@
 							<setMax>0.6</setMax>
 						  </li>
 						</capMods>
+					</value>
+				</li>
+				
+				<!-- ===== Watching ===== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/WorkGiverDef[defName="BnC_WatchAdult"]/requiredCapacities</xpath>
+					<value>
+						<requiredCapacities>
+							<li>Sight</li>
+						</requiredCapacities>
 					</value>
 				</li>
 			

@@ -337,11 +337,13 @@
 							<label>Ship Bay and Shuttle</label>
 							<description>Ship bay, shuttle and transport.</description>
 							<defNames>
+								<li>ShipShuttleBayLarge</li>
 								<li>ShipShuttleBay</li>
 								<li>ShipSalvageBay</li>
 								<li>PersonalShuttle</li>
 								<li>CargoShuttle</li>
 								<li>HeavyShuttle</li>
+								<li>DropshipShuttle</li>
 							</defNames>
 							<designationCategory>Ship</designationCategory>
 							<debug>false</debug>

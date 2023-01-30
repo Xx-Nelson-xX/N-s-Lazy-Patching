@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>RimJobWorld</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- ===== Stage Limits ===== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="RJW_BabyState"]/stages/li[label="toddler"]/capMods</xpath>
+					<value>
+						<capMods>
+						  <li>
+							<capacity>Manipulation</capacity>
+							<setMax>0.4</setMax>
+						  </li>
+						  <li>
+							<capacity>Talking</capacity>
+							<setMax>0.5</setMax>
+						  </li>
+						  <li>
+							<capacity>Moving</capacity>
+							<setMax>0.6</setMax>
+						  </li>
+						</capMods>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
