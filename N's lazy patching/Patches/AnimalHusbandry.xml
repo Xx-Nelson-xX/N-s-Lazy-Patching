@@ -4,53 +4,47 @@
 	<!-- == Wool for Wooly Animals == -->
 	<!-- == Wooly Horse == -->
 	<Operation Class="PatchOperationAdd">	
-		<xpath>Defs/ThingDef[defName="Horse_Wooly"]</xpath>
+		<xpath>Defs/ThingDef[defName="Horse_Wooly"]/comps</xpath>
 		<value>
-			<comps>
-				<li Class="CompProperties_Shearable">
-					<woolDef>WoolMuffalo</woolDef>
-					<shearIntervalDays>10</shearIntervalDays>
-					<woolAmount>60</woolAmount>
-				</li>
-			</comps>
+			<li Class="CompProperties_Shearable">
+				<woolDef>WoolMuffalo</woolDef>
+				<shearIntervalDays>10</shearIntervalDays>
+				<woolAmount>60</woolAmount>
+			</li>
 		</value>
 	</Operation>
 	
 	<!-- == Wooly Rhino == -->
 	<Operation Class="PatchOperationAdd">	
-		<xpath>Defs/ThingDef[defName="Rhino_Wooly"]</xpath>
+		<xpath>Defs/ThingDef[defName="Rhino_Wooly"]/comps</xpath>
 		<value>
-			<comps>
-				<li Class="CompProperties_Milkable">
-					<milkDef>Milk</milkDef>
-					<milkIntervalDays>2</milkIntervalDays>
-					<milkAmount>20</milkAmount>
-				</li>
-				<li Class="CompProperties_Shearable">
-					<woolDef>WoolMuffalo</woolDef>
-					<shearIntervalDays>15</shearIntervalDays>
-					<woolAmount>105</woolAmount>
-				</li>
-			</comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>WoolMuffalo</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>105</woolAmount>
+			</li>
 		</value>
 	</Operation>
 	
 	<!-- == Thrumbo == -->
 	<Operation Class="PatchOperationAdd">	
-		<xpath>Defs/ThingDef[defName="Thrumbo"]</xpath>
+		<xpath>Defs/ThingDef[defName="Thrumbo"]/comps</xpath>
 		<value>
-			<comps>
-				<li Class="CompProperties_Milkable">
-					<milkDef>Milk</milkDef>
-					<milkIntervalDays>2</milkIntervalDays>
-					<milkAmount>30</milkAmount>
-				</li>
-				<li Class="CompProperties_Shearable">
-					<woolDef>Leather_Thrumbo</woolDef>
-					<shearIntervalDays>15</shearIntervalDays>
-					<woolAmount>75</woolAmount>
-				</li>
-			</comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>30</milkAmount>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Leather_Thrumbo</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>75</woolAmount>
+			</li>
 		</value>
 	</Operation>
 	
