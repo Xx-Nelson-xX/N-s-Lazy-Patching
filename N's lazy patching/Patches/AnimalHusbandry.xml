@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-
+	
+	<!-- == comps for everything == -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly" or defName="Thrumbo"][not(comps)]</xpath>
+		<value>
+			<comps />
+		</value>
+	</Operation>
+		
 	<!-- == Wool for Wooly Animals == -->
 	<!-- == Wooly Horse == -->
 	<Operation Class="PatchOperationAdd">	
