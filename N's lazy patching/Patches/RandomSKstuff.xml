@@ -2,7 +2,7 @@
 <Patch>
 				
 	<!-- SunLamp -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="SunLamp"]/comps</xpath>
 		<value>
 			<li Class="CompProperties_Flickable"/>
@@ -10,7 +10,7 @@
 	</Operation>
 	
 	<!-- TradingSpot (Uninstall it then place it, you can't reinstall it due is count like additional one lol)-->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TradingSpot"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -19,13 +19,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TradingSpot"]/building</xpath>
 		<value>
 			<uninstallWork>800</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TradingSpot"]/statBases</xpath>
 		<value>
 			<Bulk>200</Bulk>
@@ -34,7 +34,7 @@
 	</Operation>
 	
 	<!-- FueledStove -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -43,13 +43,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="FueledStove"]/building</xpath>
 		<value>
 			<uninstallWork>800</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="FueledStove"]/statBases</xpath>
 		<value>
 			<Bulk>100</Bulk>
@@ -58,7 +58,7 @@
 	</Operation>
 	
 	<!-- Passive Cooler -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -67,13 +67,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="PassiveCooler"]/building</xpath>
 		<value>
 			<uninstallWork>200</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="PassiveCooler"]/statBases</xpath>
 		<value>
 			<Bulk>20</Bulk>
@@ -82,7 +82,7 @@
 	</Operation>
 	
 	<!-- Coldstone Passive Cooler -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ColdstonePassiveCooler"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -91,13 +91,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ColdstonePassiveCooler"]/building</xpath>
 		<value>
 			<uninstallWork>200</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ColdstonePassiveCooler"]/statBases</xpath>
 		<value>
 			<Bulk>20</Bulk>
@@ -106,7 +106,7 @@
 	</Operation>
 	
 	<!-- TableSawmillElectric -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableSawmillElectric"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -115,13 +115,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableSawmillElectric"]/building</xpath>
 		<value>
 			<uninstallWork>1600</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableSawmillElectric"]/statBases</xpath>
 		<value>
 			<Bulk>500</Bulk>
@@ -130,7 +130,7 @@
 	</Operation>
 	
 	<!-- TableMachining -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableMachining"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -139,13 +139,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableMachining"]/building</xpath>
 		<value>
 			<uninstallWork>1500</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableMachining"]/statBases</xpath>
 		<value>
 			<Bulk>400</Bulk>
@@ -154,7 +154,7 @@
 	</Operation>
 	
 	<!-- ElectricSmelter -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ElectricSmelter"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -163,13 +163,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ElectricSmelter"]/building</xpath>
 		<value>
 			<uninstallWork>1650</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ElectricSmelter"]/statBases</xpath>
 		<value>
 			<Bulk>500</Bulk>
@@ -178,7 +178,7 @@
 	</Operation>
 	
 	<!-- ElectricSmithy -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ElectricSmithy"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -187,13 +187,13 @@
 			</thingCategories>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ElectricSmithy"]/building</xpath>
 		<value>
 			<uninstallWork>1650</uninstallWork>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="ElectricSmithy"]/statBases</xpath>
 		<value>
 			<Bulk>500</Bulk>
@@ -202,7 +202,7 @@
 	</Operation>
 	
 	<!-- TableElectronics -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableElectronics"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -214,7 +214,7 @@
 			</building>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableElectronics"]/statBases</xpath>
 		<value>
 			<Bulk>300</Bulk>
@@ -223,7 +223,7 @@
 	</Operation>
 	
 	<!-- Medical Table -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="meditable"]</xpath>
 		<value>
 			<minifiedDef>MinifiedThing</minifiedDef>
@@ -235,7 +235,7 @@
 			</building>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="meditable"]/statBases</xpath>
 		<value>
 			<Bulk>100</Bulk>
@@ -244,11 +244,19 @@
 	</Operation>
 	
 	<!-- Inorganic Matter Converter -->
-	<Operation Class="PatchOperationAdd">	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="MatterConverter"]/recipes</xpath>
 		<value>
 			<li>ConvertToWolframite</li>
 			<li>ConvertToNitre</li>
+		</value>
+	</Operation>
+	
+	<!-- Animal beds-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="AnimalBedBase"]/passability</xpath>
+		<value>
+			<passability>Standable</passability>
 		</value>
 	</Operation>
 

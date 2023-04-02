@@ -1,7 +1,7 @@
 Features: "-" = HSK 	"+" = DLCs		"*" = 3rd party
 
 + Ideology						->	Ideology DLC slab bed patch
-- RandomSKstuff					->	Patch some HSK buildings making them reinstallable
+- RandomSKstuff					->	Patch some HSK buildings which alter a bit their behaviors
 - NoNutritionforMed				->	Remove nutrition value for medicine(Pills specially)
 * RatkinMouseWheel 				->	Mousewheel reinstallation
 * AnimationPatchHSK				->	Animation patches
@@ -25,7 +25,7 @@ Like I said, you are free to remove any patch you don't want/need
 Функции: "-" = HSK 	  	"+" = DLCs		"*" = Сторонний
 
 + Ideology						->	Заплатка кровати плиты Ideology DLC
-- RandomSKstuff					->	Исправьте некоторые здания HSK, сделав их переустанавливаемыми.
+- RandomSKstuff					->	Исправление некоторых зданий HSK, которые немного меняют их поведение.
 - NoNutritionforMed				->	Убрать пищевую ценность для лекарств (особенно для таблеток)
 * RatkinMouseWheel 				->	Переустановка колесика мыши
 * AnimationPatchHSK				->	Патчи анимации
@@ -54,7 +54,7 @@ Almost forgot this, thanks for following people who helped me patching stuff, ei
 +Âbräxas			+DimaKitsenko
 +TORY187			+Dusty Breeches
 +CnArmor			+BLAKIL
-+Nabber
++Nabber				+TheLoneTec
 
 And lastly... you :D
 И напоследок ... вы :D

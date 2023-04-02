@@ -2,12 +2,22 @@
 <Patch>
 	
 	<!-- == comps for everything == -->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly" or defName="Thrumbo"][not(comps)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly" or defName="Thrumbo"]</xpath>
+			<value>
+				<comps />
+			</value>
+		</match>
+	</Operation>
+	
+	<!--<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly" or defName="Thrumbo"][not(comps)]</xpath>
 		<value>
 			<comps />
 		</value>
-	</Operation>
+	</Operation>-->
 		
 	<!-- == Wool for Wooly Animals == -->
 	<!-- == Wooly Horse == -->
