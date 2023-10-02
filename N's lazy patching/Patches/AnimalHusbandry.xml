@@ -3,9 +3,19 @@
 	
 	<!-- == comps for everything == -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly" or defName="Thrumbo"][not(comps)]</xpath>
+		<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly"][not(comps)]</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly" or defName="Thrumbo"]</xpath>
+			<xpath>Defs/ThingDef[defName="Horse_Wooly" or defName="Rhino_Wooly"]</xpath>
+			<value>
+				<comps />
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Thrumbo"][not(comps)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Thrumbo"]</xpath>
 			<value>
 				<comps />
 			</value>
